@@ -24,7 +24,7 @@ class Program
 
     public void OptionsMenu()
     {
-        Console.Write("Main Menu:\n\t (A) Add Celebrity\n \n\t (L) List Celebrities\n \n\t(F) Fill List\n \n\t (Q) Quit\n");
+        Console.Write("Main Menu:\n\t (A) Add Celebrity\n \n\t (L) List Celebrities\n \n\t (F) Fill List\n \n\t (V) Avg Age\n \n\t (Q) Quit\n");
         string? input = Console.ReadLine();
 
         switch(input)
@@ -33,6 +33,8 @@ class Program
             case "a": AddCeleb(); break;
             case "L":
             case "l": ListCelebs(); break;
+            case "V":
+            case "v": AvgAge(); break;
             case "F":
             case "f": FillList(); break;
             case "Q":
