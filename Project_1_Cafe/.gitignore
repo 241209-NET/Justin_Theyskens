@@ -1,2 +1,6 @@
 **/bin
 **/obj
+# Ignore specific files
+Cafe.csproj
+Appsettings.json
+Project_1_Cafe.sln

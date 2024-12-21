@@ -1,0 +1,15 @@
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\bin\Debug\net8.0\StringManipulation.exe
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\bin\Debug\net8.0\StringManipulation.deps.json
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\bin\Debug\net8.0\StringManipulation.runtimeconfig.json
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\bin\Debug\net8.0\StringManipulation.dll
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\bin\Debug\net8.0\StringManipulation.pdb
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.AssemblyInfoInputs.cache
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.AssemblyInfo.cs
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.csproj.CoreCompileInputs.cache
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.sourcelink.json
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.dll
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\refint\StringManipulation.dll
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.pdb
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\StringManipulation.genruntimeconfig.cache
+C:\Users\justi\Desktop\Revature\Work\Justin_Theyskens\StringManipultionTest\StringManipulation\obj\Debug\net8.0\ref\StringManipulation.dll
