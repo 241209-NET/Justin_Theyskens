@@ -1,0 +1,1 @@
+This is a Cafe App that allows the customer to Order from a menu of food and drink, customize thier items, then pay through the app.
