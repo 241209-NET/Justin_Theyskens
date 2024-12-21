@@ -1,4 +1,4 @@
-namespace Cafe.Items;
+namespace Cafe.API.Items;
 
 public class Syrup
 {
@@ -20,6 +20,9 @@ public class Syrup
         get { return _Pumps; }
         set { _Pumps = value; }
     }
+
+    public int ItemId { get; set; }
+
     public Syrup(SyrupFlavor flavor, int pumps)
     {
         Flavor = flavor;

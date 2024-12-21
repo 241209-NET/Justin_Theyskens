@@ -1,4 +1,4 @@
-namespace Cafe.Items;
+namespace Cafe.API.Items;
 
 public class Food : Item
 {

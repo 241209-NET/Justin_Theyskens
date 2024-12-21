@@ -1,4 +1,4 @@
-namespace Cafe.Items;
+namespace Cafe.API.Items;
 
 public class Drink : Item
 {
@@ -30,6 +30,10 @@ public class Drink : Item
     {
         var syrup = new Syrup(flavor, pumps);
         Syrups.Add(syrup);
+        
+        // Syrup's ID is tied to the drink's ID.
+        syrup.ItemId = ItemId;
+
         return syrup;
     }
 
