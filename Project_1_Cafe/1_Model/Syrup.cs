@@ -2,6 +2,7 @@ namespace Cafe.API.Items;
 
 public class Syrup
 {
+    public static int Index;
     public enum SyrupFlavor
     {
         Vanilla,
@@ -22,10 +23,18 @@ public class Syrup
     }
 
     public int ItemId { get; set; }
+    public int SyrupId { get; set; }
 
     public Syrup(SyrupFlavor flavor, int pumps)
     {
         Flavor = flavor;
         _Pumps = pumps;
+        SyrupId = GetID();
+    }
+
+    public static int GetID()
+    {
+        Index ++;
+        return Index;
     }
 }

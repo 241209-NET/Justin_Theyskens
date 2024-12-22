@@ -54,7 +54,7 @@ public class Item
 
     public Condiment AddCondiment(Condiment.CondimentType type)
     {
-        var newCondiment = new Condiment(type);
+        var newCondiment = new Condiment(type, SetItemId());
         Condiments.Add(newCondiment);
 
         newCondiment.ItemId = _ItemId;
