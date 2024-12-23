@@ -1,6 +1,6 @@
 namespace Cafe.API.Items;
 
-public class Item
+public abstract class Item
 {
     private static int _ItemIndex;
 
@@ -15,6 +15,7 @@ public class Item
         get { return _Name; }
         set { _Name = value; }
     }
+    
 
     public double Price
     {

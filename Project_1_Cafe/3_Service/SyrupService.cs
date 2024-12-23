@@ -9,6 +9,13 @@ public class SyrupService : ISyrupService
         // TODO
         return syrup;
     }
+
+    public Syrup GetSyrupById(int syrupID)
+    {
+        // TODO
+        return new Syrup(Syrup.SyrupFlavor.Vanilla, 1);
+    }
+
     public IEnumerable<Syrup> GetAllSyrups()
     {
         // TODO

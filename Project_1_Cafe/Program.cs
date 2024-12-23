@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Cafe.API.Data;
+using Cafe.API.Repo;
+using Cafe.API.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//context for each item in db
+//builder.Services.AddDbContext<SyrupContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

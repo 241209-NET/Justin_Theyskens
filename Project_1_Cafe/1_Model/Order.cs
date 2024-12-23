@@ -12,6 +12,23 @@ public class Order
         set { _Id = value; }
     }
 
+    public double Tax = 0.09;
+
+    public double Total
+    {
+        get 
+        {
+            double total = 0;
+            foreach (var item in Items)
+            {
+                total += item.Price;
+            }
+            total = total + (total * Tax);
+
+            return Math.Round(total, 2);
+        }
+    }
+
     private List<Item> Items = [];
     public Order()
     {

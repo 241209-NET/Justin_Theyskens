@@ -4,18 +4,9 @@ namespace Cafe.API.Service;
 
 public interface ISyrupService
 {
-    /*
-    public interface IPetService
-{
-    Pet CreateNewPet(Pet newPet);
-    IEnumerable<Pet> GetAllPets();
-    Pet? GetPetById(int id);
-    IEnumerable<Pet> GetPetByName(string name);
-}
-    */
-
     Syrup GetNewSyrup(Syrup syrup);
+    Syrup GetSyrupById(int syrupID);
     IEnumerable<Syrup> GetAllSyrups();
+    IEnumerable<Syrup> GetSyrupsByDrink(int itemID);
     
-    IEnumerable<Syrup> GetSyrupByDrink(int itemID);
 }

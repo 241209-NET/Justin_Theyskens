@@ -26,8 +26,7 @@ public class SyrupController
     [HttpPost]
     public Syrup GetNewSyrup(Syrup syrup)
     {
-        //var newSyrup = new Syrup(syrup.Flavor, syrup.Pumps);
-        //return newSyrup;
+
 
         //var newSyrup = _SyrupServices.GetNewSyrup(syrup);
         throw new NotImplementedException();
