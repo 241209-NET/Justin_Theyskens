@@ -30,6 +30,15 @@ public class DrinkController : ControllerBase
         return Ok(newDrink);
     }
 
+
+    [HttpGet("{id}")]
+    public IActionResult GetDrinksByOrder(int id)
+    {
+        var drinks = _DrinkService.GetDrinksByOrder(id);
+
+        return Ok(drinks);
+    }
+
     [HttpDelete]
     public IActionResult DeleteDrink(int id)
     {

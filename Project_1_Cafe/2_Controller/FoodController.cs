@@ -39,6 +39,7 @@ public class FoodController : ControllerBase
         throw new NotImplementedException();
     }
 
+    [HttpGet("{id}")]
     public Food GetFoodByorder(int orderId)
     {
         throw new NotImplementedException();

@@ -1,6 +1,7 @@
 using Cafe.API.Service;
 using Cafe.API.Items;
 using Cafe.API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cafe.API.Repo;
 
@@ -12,24 +13,19 @@ public class OrderRepo : IOrderRepo
 
     public Order GetNewOrder(Order Order)
     {
-        throw new NotImplementedException();
+        _OrderContext.Orders.Add(Order);
+        _OrderContext.SaveChanges();
+        return Order;
     }
     public IEnumerable<Order> GetAllOrders()
     {
-        throw new NotImplementedException();
+        return _OrderContext.Orders;
     }
 
 
     public Order? GetOrderById(int id)
     {
-
-        /* something like this
-        var Order? = something.FindById(itemID)
-        List<Order> list = Order.Orders;
-        var Order = Order?.Orders[index];
-        return Order;
-        */
-        throw new NotImplementedException();
+        return _OrderContext.Orders.Find(id);
     }
 
 }

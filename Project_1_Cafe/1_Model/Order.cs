@@ -5,12 +5,10 @@ namespace Cafe;
 public class Order
 {
     private static int _OrderIndex;
-    private int _Id;
-    public int Id
-    {
-        get { return _Id; }
-        set { _Id = value; }
-    }
+
+    public int Id { get; set; }
+
+    public string Name { get; set; }
 
     public double Tax = 0.09;
 
@@ -30,14 +28,15 @@ public class Order
     }
 
     private List<Item> Items = [];
-    public Order()
+    public Order(string name)
     {
-        _Id = NextOrder();
+        Name = name;
+        Id = NextOrder();
     }
 
     public void AddItem(Item item)
     {
-        if (item.OrderId == _Id)
+        if (item.OrderId == Id)
         {
             Items.Add(item);
             Console.WriteLine($"{item} has been added to the order.");

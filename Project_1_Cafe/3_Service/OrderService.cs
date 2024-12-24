@@ -10,21 +10,19 @@ public class OrderService : IOrderService
     public OrderService(IOrderRepo OrderRepository) => _OrderRepository = OrderRepository;
     public Order GetNewOrder(Order Order)
     {
-        // TODO
-        return Order;
+        return _OrderRepository.GetNewOrder(Order);
     }
     public IEnumerable<Order> GetAllOrders()
     {
-        // TODO
-        List<Order> list = [];
-        return list;
-
+        return _OrderRepository.GetAllOrders();
     }
     
-    public Order GetOrderById(int orderId)
+    public Order? GetOrderById(int orderId)
     {
-        // TODO
-        throw new NotImplementedException();
+        if (orderId < 0) 
+            return null;
+
+        return _OrderRepository.GetOrderById(orderId)!;
     }
 
     //private readonly IOrderRepo;

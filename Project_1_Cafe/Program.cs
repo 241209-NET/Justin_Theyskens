@@ -8,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 //Add dbcontext and connect it to connection string
 builder.Services.AddDbContext<FoodContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+builder.Services.AddDbContext<SyrupContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+builder.Services.AddDbContext<OrderContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -17,10 +22,20 @@ builder.Services.AddSwaggerGen();
 //Dependency Inject the proper services
 builder.Services.AddScoped<IFoodService, FoodService>();
 builder.Services.AddScoped<ISyrupService, SyrupService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 //Dependency Inject the proper repositories
 builder.Services.AddScoped<IFoodRepo, FoodRepo>();
 builder.Services.AddScoped<ISyrupRepo, SyrupRepo>();
+builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+
+//Add our controllers
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
+
 
 var app = builder.Build();
 
