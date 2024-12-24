@@ -1,9 +1,14 @@
 using Cafe.API.Items;
+using Cafe.API.Repo;
 
 namespace Cafe.API.Service;
 
 public class FoodService : IFoodService
 {
+    private readonly IFoodRepo _FoodRepository;
+
+    public FoodService(IFoodRepo FoodRepository) => _FoodRepository = FoodRepository;
+
     public Food GetNewFood(Food Food)
     {
         // TODO
@@ -17,7 +22,7 @@ public class FoodService : IFoodService
 
     }
     
-    public IEnumerable<Food> GetFoodsByDrink(int itemID)
+    public IEnumerable<Food> GetFoodsByOrder(int orderId)
     {
         // TODO
         throw new NotImplementedException();

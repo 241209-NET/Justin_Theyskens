@@ -7,7 +7,6 @@ public interface IFoodService
     Food GetNewFood(Food Food);
     IEnumerable<Food> GetAllFoods();
     
-    IEnumerable<Food> GetFoodsByDrink(int itemID);
-
+    IEnumerable<Food> GetFoodsByOrder(int orderID);
     
 }

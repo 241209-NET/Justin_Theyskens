@@ -1,10 +1,15 @@
 using Cafe.API.Service;
 using Cafe.API.Items;
+using Cafe.API.Data;
 
 namespace Cafe.API.Repo;
 
 public class FoodRepo : IFoodRepo
 {
+
+    private readonly FoodContext _FoodContext;
+
+    public FoodRepo(FoodContext FoodContext) => _FoodContext = FoodContext;
 
     public Food GetNewFood(Food Food)
     {

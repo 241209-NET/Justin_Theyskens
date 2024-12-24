@@ -1,9 +1,15 @@
+using Cafe.API.Repo;
 using Cafe.API.Items;
 
 namespace Cafe.API.Service;
 
 public class SyrupService : ISyrupService
 {
+
+    private readonly ISyrupRepo _SyrupRepository;
+
+    public SyrupService(ISyrupRepo SyrupRepository) => _SyrupRepository = SyrupRepository;
+
     public Syrup GetNewSyrup(Syrup syrup)
     {
         // TODO
@@ -23,12 +29,10 @@ public class SyrupService : ISyrupService
         return list;
 
     }
-    
+
     public IEnumerable<Syrup> GetSyrupsByDrink(int itemID)
     {
         // TODO
-        throw new NotImplementedException();
+        throw new NotImplementedException();        
     }
-
-    //private readonly ISyrupRepo;
 }

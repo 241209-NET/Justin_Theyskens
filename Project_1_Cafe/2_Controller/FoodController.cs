@@ -17,7 +17,7 @@ public class FoodController
     }
 
     [HttpGet]
-    public IActionResult GetAllFood()
+    public IActionResult GetAllFoods()
     {
         //var Foods = _FoodService.GetAllFoods():
         throw new NotImplementedException();
@@ -36,6 +36,11 @@ public class FoodController
     public Food DeleteFood(Food Food)
     {
 
+        throw new NotImplementedException();
+    }
+
+    public Food GetFoodByorder(int orderId)
+    {
         throw new NotImplementedException();
     }
 
