@@ -1,5 +1,5 @@
 # Online Cafe ordering Service
-This is a Web App made in .NET to allow customers to Order from a menu of food and drinks, as well as customize thier items. 
+This is a Web App made in .NET to allow customers to Order from a menu of food and drinks, as well as customize their items. 
 
 ## Project Members
 Justin Theyskens
