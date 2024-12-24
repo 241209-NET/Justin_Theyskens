@@ -10,5 +10,5 @@ public class OrderContext :DbContext
     {
     }
 
-    public virtual DbSet<Order> Orders {get; set; }
+    public virtual DbSet<Order>? Orders {get; set; }
 }

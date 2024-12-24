@@ -1,8 +1,10 @@
+using Cafe.API.Util;
+
 namespace Cafe.API.Items;
 
 public abstract class Item
 {
-    private static int _ItemIndex;
+
 
     private string _Name;
     private double _Price;
@@ -45,17 +47,9 @@ public abstract class Item
         _OrderId = id;
     }
 
-    public int SetItemId()
-    {
-        _ItemIndex ++;
-        _ItemId = _ItemIndex;
-
-        return _ItemId;
-    }
-
     public Condiment AddCondiment(Condiment.CondimentType type)
     {
-        var newCondiment = new Condiment(type, SetItemId());
+        var newCondiment = new Condiment(type, Utility.SetItemId(this));
         Condiments.Add(newCondiment);
 
         newCondiment.ItemId = _ItemId;

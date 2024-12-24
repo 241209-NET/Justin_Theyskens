@@ -6,12 +6,19 @@ using Cafe.API.Service;
 var builder = WebApplication.CreateBuilder(args);
 
 //Add dbcontext and connect it to connection string
+builder.Services.AddDbContext<CafeContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+
+
+
 builder.Services.AddDbContext<FoodContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 builder.Services.AddDbContext<SyrupContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+
 builder.Services.AddDbContext<OrderContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+
 
 
 // Add services to the container.
@@ -50,5 +57,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
 app.Run();
 
