@@ -7,7 +7,7 @@ namespace Cafe.API.Controller;
 
 [Route("api/[controller]")]
 [ApiController]
-public class SyrupController
+public class SyrupController : ControllerBase
 {
 
     private readonly ISyrupService _SyrupService;

@@ -7,7 +7,7 @@ namespace Cafe.API.Controller;
 
 [Route("api/[controller]")]
 [ApiController]
-public class FoodController
+public class FoodController : ControllerBase
 {
 
     private readonly IFoodService _FoodService;
