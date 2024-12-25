@@ -10,10 +10,27 @@ namespace Cafe.API.Controller;
 public class FoodController : ControllerBase
 {
 
+    public List<string> FoodMenu = 
+    [
+        "Butter Croissant",
+        "Ham & Swiss Croissant",
+        "Chocolate Croissant",
+        "Bacon, Egg, & Cheddar Sandwich",
+        "Bacon, Egg, & Gouda Sandwich",
+        "Grilled Cheese Sandwich",
+    ];
+
     private readonly IFoodService _FoodService;
     public FoodController(IFoodService FoodService)
     {
         _FoodService = FoodService;
+    }
+
+    [HttpGet("FoodMenu")]
+    public IActionResult GetFoodMenu()
+    {
+        //var Foods = _FoodService.GetAllFoods():
+        throw new NotImplementedException();
     }
 
     [HttpGet]

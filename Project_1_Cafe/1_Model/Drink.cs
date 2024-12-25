@@ -1,3 +1,6 @@
+using System.Data.SqlTypes;
+using Microsoft.OpenApi.Extensions;
+
 namespace Cafe.API.Items;
 
 public class Drink : Item
@@ -8,7 +11,20 @@ public class Drink : Item
         Grande,
         Venti
     }
+
+    public enum DrinkType
+    {
+        water,
+        Coffee,
+        Tea,
+        Latte,
+        Cappucino,
+        Macchiato
+    }
+
     public DrinkSize Size { get; set; }
+
+    public DrinkType SelectDrinkType { get; set; }
 
     private int _Shots;
     public int Shots
@@ -19,10 +35,11 @@ public class Drink : Item
 
     public List<Syrup> Syrups = [];
 
-    public Drink(DrinkSize size, string name, double price, int id)
-        : base(name, price, id)
+    public Drink(DrinkSize size, DrinkType type, double price, int id)
+        : base(nameof(type), price, id)
     {
         Size = size;
+        SelectDrinkType = type;
     }
 
 
@@ -31,10 +48,16 @@ public class Drink : Item
         var syrup = new Syrup(flavor, pumps);
         Syrups.Add(syrup);
         
-        // Syrup's ID is tied to the drink's ID.
         syrup.ItemId = ItemId;
+        string sName = nameof(flavor);
+        UpdateName(sName);
 
         return syrup;
+    }
+
+    public void UpdateName(string toAdd)
+    {
+        Name = $"{toAdd} {Name}";
     }
 
     public int AddShots(int amount)
