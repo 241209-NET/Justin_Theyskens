@@ -24,10 +24,7 @@ public class SyrupService : ISyrupService
 
     public IEnumerable<Syrup> GetAllSyrups()
     {
-        // TODO
-        List<Syrup> list = [];
-        return list;
-
+        return _SyrupRepository.GetAllSyrups();
     }
 
     public IEnumerable<Syrup> GetSyrupsByDrink(int itemID)

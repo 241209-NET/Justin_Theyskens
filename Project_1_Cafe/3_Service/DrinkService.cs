@@ -8,24 +8,21 @@ public class DrinkService : IDrinkService
     private readonly IDrinkRepo _DrinkRepository;
 
     public DrinkService(IDrinkRepo DrinkRepository) => _DrinkRepository = DrinkRepository;
-    public Drink GetNewDrink(Drink Drink)
+    public Drink CreateNewDrink(Drink drink)
     {
-        // TODO
-        return Drink;
+        var newDrink = _DrinkRepository.CreateNewDrink(drink);
+        return newDrink;
     }
     public IEnumerable<Drink> GetAllDrinks()
     {
-        // TODO
-        List<Drink> list = [];
-        return list;
+        var drinks = _DrinkRepository.GetAllDrinks();
+        return drinks;
 
     }
     
     public IEnumerable<Drink> GetDrinksByOrder(int orderId)
     {
-        // TODO
+        var drinks = _DrinkRepository.GetDrinksByOrder(orderId);
         throw new NotImplementedException();
     }
-
-    //private readonly IDrinkRepo;
 }

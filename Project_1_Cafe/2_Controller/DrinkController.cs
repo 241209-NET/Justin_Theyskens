@@ -42,9 +42,9 @@ public class DrinkController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult GetNewDrink(Drink drink)
+    public IActionResult CreateNewDrink(Drink drink)
     {
-        var newDrink = _DrinkService.GetNewDrink(drink);
+        var newDrink = _DrinkService.CreateNewDrink(drink);
 
         return Ok(newDrink);
     }

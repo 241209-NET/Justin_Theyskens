@@ -19,17 +19,16 @@ public class SyrupController : ControllerBase
     [HttpGet]
     public IActionResult GetAllSyrups()
     {
-        //var syrups = _SyrupService.GetAllSyrups():
-        throw new NotImplementedException();
+        var syrups = _SyrupService.GetAllSyrups();
+        return Ok(syrups);
     }
 
     [HttpPost]
-    public Syrup GetNewSyrup(Syrup syrup)
+    public IActionResult GetNewSyrup(Syrup syrup)
     {
 
-
-        //var newSyrup = _SyrupServices.GetNewSyrup(syrup);
-        throw new NotImplementedException();
+        var newSyrup = _SyrupService.GetNewSyrup(syrup);
+        return Ok(newSyrup);
     }
 
     [HttpDelete]

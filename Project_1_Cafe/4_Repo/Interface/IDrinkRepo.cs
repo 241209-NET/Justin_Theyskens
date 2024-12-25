@@ -4,9 +4,9 @@ namespace Cafe.API.Repo;
 
 public interface IDrinkRepo
 {
-    Drink GetNewDrink(Drink Drink);
+    Drink CreateNewDrink(Drink Drink);
     IEnumerable<Drink> GetAllDrinks();
-    IEnumerable<Drink> GetDrinksByDrink();
+    IEnumerable<Drink> GetDrinksByOrder(int orderId);
 
     Drink? GetDrink(int itemID, int index);
 }

@@ -1,3 +1,5 @@
+using Cafe.API.Util;
+
 namespace Cafe.API.Items;
 
 public class Syrup
@@ -12,6 +14,14 @@ public class Syrup
         BrownSugar,
         WhiteMocha,
         Pumpkin
+    }
+
+    public string Name
+    {
+        get 
+        {
+            return Utility.AddSpaces(nameof(Flavor));
+        }
     }
 
     public SyrupFlavor Flavor { get; set; }

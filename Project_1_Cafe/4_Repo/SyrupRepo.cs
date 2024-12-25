@@ -29,13 +29,6 @@ public class SyrupRepo : ISyrupRepo
 
     public Syrup? GetSyrup(int itemID, int index)
     {
-
-        /* something like this
-        var drink? = something.FindById(itemID)
-        List<Syrup> list = drink.Syrups;
-        var syrup = drink?.Syrups[index];
-        return syrup;
-        */
         throw new NotImplementedException();
     }
 

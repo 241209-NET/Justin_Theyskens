@@ -15,7 +15,7 @@ public class OrderController : ControllerBase
         _OrderService = orderService;
     }
 
-        [HttpGet]
+    [HttpGet]
     public IActionResult GetAllOrders()
     {
         var OrderList = _OrderService.GetAllOrders();        

@@ -13,4 +13,18 @@ public static class Utility
 
         return item.ItemId;
     }
+
+    public static string AddSpaces(string str)
+    {
+        string output = "";
+        for(int i = 0; i < str.Length; i++)
+        {
+            if (i > 0 && Char.IsUpper(str[i]))
+                output += " " + str[i];
+            else
+                output += str[i];
+        }
+
+        return output;
+    }
 }

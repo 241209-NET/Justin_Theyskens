@@ -9,7 +9,7 @@ public class FoodService : IFoodService
 
     public FoodService(IFoodRepo FoodRepository) => _FoodRepository = FoodRepository;
 
-    public Food GetNewFood(Food Food)
+    public Food CreateNewFood(Food Food)
     {
         // TODO
         return Food;

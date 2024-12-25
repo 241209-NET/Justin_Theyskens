@@ -4,7 +4,7 @@ namespace Cafe.API.Service;
 
 public interface IFoodService
 {
-    Food GetNewFood(Food Food);
+    Food CreateNewFood(Food Food);
     IEnumerable<Food> GetAllFoods();
     
     IEnumerable<Food> GetFoodsByOrder(int orderID);

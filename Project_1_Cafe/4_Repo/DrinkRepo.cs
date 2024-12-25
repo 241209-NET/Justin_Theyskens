@@ -10,7 +10,7 @@ public class DrinkRepo : IDrinkRepo
 
     public DrinkRepo(DrinkContext DrinkContext) => _DrinkContext = DrinkContext;
 
-    public Drink GetNewDrink(Drink Drink)
+    public Drink CreateNewDrink(Drink Drink)
     {
         throw new NotImplementedException();
     }
@@ -19,7 +19,7 @@ public class DrinkRepo : IDrinkRepo
         throw new NotImplementedException();
     }
 
-    public IEnumerable<Drink> GetDrinksByDrink()
+    public IEnumerable<Drink> GetDrinksByOrder(int orderId)
     {
         throw new NotImplementedException();
     }

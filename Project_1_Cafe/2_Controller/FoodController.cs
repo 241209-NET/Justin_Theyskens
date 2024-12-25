@@ -29,19 +29,18 @@ public class FoodController : ControllerBase
     [HttpGet("FoodMenu")]
     public IActionResult GetFoodMenu()
     {
-        //var Foods = _FoodService.GetAllFoods():
-        throw new NotImplementedException();
+        return Ok(FoodMenu);
     }
 
     [HttpGet]
     public IActionResult GetAllFoods()
     {
-        //var Foods = _FoodService.GetAllFoods():
-        throw new NotImplementedException();
+        var foods = _FoodService.GetAllFoods();
+        return Ok(foods);
     }
 
     [HttpPost]
-    public Food GetNewFood(Food Food)
+    public Food CreateNewFood(Food Food)
     {
 
 

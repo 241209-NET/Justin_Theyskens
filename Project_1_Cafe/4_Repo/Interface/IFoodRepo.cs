@@ -4,7 +4,7 @@ namespace Cafe.API.Repo;
 
 public interface IFoodRepo
 {
-    Food GetNewFood(Food Food);
+    Food CreateNewFood(Food Food);
     IEnumerable<Food> GetAllFood();
     IEnumerable<Food> GetFoodsByDrink();
 

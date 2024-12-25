@@ -1,9 +1,22 @@
+using Cafe.API.Util;
+
 namespace Cafe.API.Items;
 
 public class Food : Item
 {
-    public Food(string name, double price, int id)
-        : base(name, price, id)
+    public enum FoodType
+    {
+        ButterCroissant,
+        HamAndSwissCroissant,
+        ChocolateCroissant,
+        BaconEggAndCheddarSandwich,
+        BaconEggAndGoudaSandwich,
+        GrilledCheeseSandwich,
+    }
+
+    public FoodType SelectFoodTyper { get; set; }
+    public Food(FoodType type, double price, int id)
+        : base(Utility.AddSpaces(nameof(type)), price, id)
         {            
         }
         

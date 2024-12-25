@@ -11,7 +11,7 @@ public class FoodRepo : IFoodRepo
 
     public FoodRepo(FoodContext FoodContext) => _FoodContext = FoodContext;
 
-    public Food GetNewFood(Food Food)
+    public Food CreateNewFood(Food Food)
     {
         throw new NotImplementedException();
     }
