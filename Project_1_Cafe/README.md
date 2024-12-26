@@ -1,4 +1,4 @@
-# Online Cafe ordering Service
+# Backend API Online Cafe
 This is a Web App made in .NET to allow customers to Order from a menu of food and drinks, as well as customize their items. 
 
 ## Project Members
