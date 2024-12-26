@@ -1,3 +1,4 @@
+using Cafe.API.Service;
 using Cafe.API.Util;
 
 namespace Cafe.API.Items;
@@ -36,7 +37,7 @@ public abstract class Item
 
     public List<Condiment> Condiments = new();
 
-    public Item(string name, double price, int id)
+    public Item(int id, string name, double price)
     {
         _Name = name;
         _Price = price;

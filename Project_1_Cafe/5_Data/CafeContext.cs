@@ -11,8 +11,8 @@ public class CafeContext :DbContext
     {
     }
 
-    public virtual DbSet<Order>? Orders {get; set; }
-    //public virtual DbSet<Drink>? Drinks {get; set; }
-    //public virtual DbSet<Food>? Food {get; set; }
-    public virtual DbSet<Syrup>? Syrups {get; set; }
+    public virtual DbSet<Order>? Orders { get; set; }
+    public virtual DbSet<Drink>? Drinks { get; set; }
+    public virtual DbSet<Food>? Food { get; set; }
+    public virtual DbSet<Syrup>? Syrups { get; set; }
 }

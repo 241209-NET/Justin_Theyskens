@@ -10,7 +10,7 @@ public class SyrupRepo : ISyrupRepo
 
     private readonly CafeContext _CafeContext;
 
-    public SyrupRepo(CafeContext CafeContext) => _CafeContext = CafeContext;
+    public SyrupRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
 
     public Syrup GetNewSyrup(Syrup syrup)

@@ -13,7 +13,7 @@ public class Condiment : Item
     public CondimentType Type { get; set; }
 
     public Condiment(CondimentType type, int id)
-    : base(nameof(type), 0, id)
+    : base(id, nameof(type), 0)
     {
         Type = type;
     }

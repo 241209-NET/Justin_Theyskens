@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Extensions;
 
 namespace Cafe.API.Items;
 
-public class Drink : Item
+public class Drink : ICafeItem
 {
     public enum DrinkSize
     {
@@ -22,9 +22,15 @@ public class Drink : Item
         Macchiato
     }
 
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public double Price { get; set; }
+
+    public ICafeItem.ItemType Type {get; set; }
+
     public DrinkSize Size { get; set; }
 
-    public DrinkType SelectDrinkType { get; set; }
+    public DrinkType DrinkSelection { get; set; }
 
     private int _Shots;
     public int Shots
@@ -35,11 +41,14 @@ public class Drink : Item
 
     public List<Syrup> Syrups = [];
 
-    public Drink(DrinkSize size, DrinkType type, double price, int id)
-        : base(nameof(type), price, id)
+    public Drink(DrinkSize size, string name, double price)
     {
+        Id = GetId();
         Size = size;
-        SelectDrinkType = type;
+        Name = name;
+        DrinkSelection = DrinkType.Coffee;
+        Type = ICafeItem.ItemType.Drink;
+        Price = price;
     }
 
 
@@ -48,7 +57,7 @@ public class Drink : Item
         var syrup = new Syrup(flavor, pumps);
         Syrups.Add(syrup);
         
-        syrup.ItemId = ItemId;
+        syrup.ItemId = Id;
         string sName = nameof(flavor);
         UpdateName(sName);
 
@@ -64,5 +73,10 @@ public class Drink : Item
     {
         _Shots += amount;
         return _Shots;
+    }
+
+    public int GetId()
+    {
+        return 0;
     }
 }

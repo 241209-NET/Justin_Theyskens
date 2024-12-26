@@ -7,7 +7,7 @@ public class DrinkService : IDrinkService
 {
     private readonly IDrinkRepo _DrinkRepository;
 
-    public DrinkService(IDrinkRepo DrinkRepository) => _DrinkRepository = DrinkRepository;
+    public DrinkService(IDrinkRepo drinkRepository) => _DrinkRepository = drinkRepository;
     public Drink CreateNewDrink(Drink drink)
     {
         var newDrink = _DrinkRepository.CreateNewDrink(drink);
@@ -23,6 +23,11 @@ public class DrinkService : IDrinkService
     public IEnumerable<Drink> GetDrinksByOrder(int orderId)
     {
         var drinks = _DrinkRepository.GetDrinksByOrder(orderId);
+        throw new NotImplementedException();
+    }
+
+    public Drink GetDrinkById(int itemId)
+    {
         throw new NotImplementedException();
     }
 }

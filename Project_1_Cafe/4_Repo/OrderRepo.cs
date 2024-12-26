@@ -9,7 +9,7 @@ public class OrderRepo : IOrderRepo
 {
     private readonly CafeContext _CafeContext;
 
-    public OrderRepo(CafeContext CafeContext) => _CafeContext = CafeContext;
+    public OrderRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
     public Order GetNewOrder(Order Order)
     {

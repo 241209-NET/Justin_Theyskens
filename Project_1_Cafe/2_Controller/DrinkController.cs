@@ -20,9 +20,9 @@ public class DrinkController : ControllerBase
     ];
 
     private readonly IDrinkService _DrinkService;
-    public DrinkController(IDrinkService DrinkService)
+    public DrinkController(IDrinkService drinkService)
     {
-        _DrinkService = DrinkService;
+        _DrinkService = drinkService;
     }
 
     [HttpGet("DrinkMenu")]
@@ -34,9 +34,6 @@ public class DrinkController : ControllerBase
     [HttpGet]
     public IActionResult GetAllDrinks()
     {
-        /* TODO:
-        Change functionality to return menu list
-        */
         var drinks = _DrinkService.GetAllDrinks();
        return Ok(drinks);
     }
@@ -61,14 +58,6 @@ public class DrinkController : ControllerBase
     [HttpDelete]
     public IActionResult DeleteDrink(int id)
     {
-        //var toDelete = _DrinkService.DeleteById(id);
-        /*
-        if (toDelete is null)
-            return NotFound();
-
-        return Ok(toDelete);
-        */
-
         return NotFound();
     }
 

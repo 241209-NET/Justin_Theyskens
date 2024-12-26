@@ -7,7 +7,7 @@ public class FoodService : IFoodService
 {
     private readonly IFoodRepo _FoodRepository;
 
-    public FoodService(IFoodRepo FoodRepository) => _FoodRepository = FoodRepository;
+    public FoodService(IFoodRepo foodRepository) => _FoodRepository = foodRepository;
 
     public Food CreateNewFood(Food Food)
     {

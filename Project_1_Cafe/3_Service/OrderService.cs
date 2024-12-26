@@ -7,7 +7,7 @@ public class OrderService : IOrderService
 {
     private readonly IOrderRepo _OrderRepository;
 
-    public OrderService(IOrderRepo OrderRepository) => _OrderRepository = OrderRepository;
+    public OrderService(IOrderRepo orderRepository) => _OrderRepository = orderRepository;
     public Order GetNewOrder(Order Order)
     {
         return _OrderRepository.GetNewOrder(Order);
@@ -24,6 +24,4 @@ public class OrderService : IOrderService
 
         return _OrderRepository.GetOrderById(orderId)!;
     }
-
-    //private readonly IOrderRepo;
 }

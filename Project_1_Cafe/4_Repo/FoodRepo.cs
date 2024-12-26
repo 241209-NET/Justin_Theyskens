@@ -9,7 +9,7 @@ public class FoodRepo : IFoodRepo
 
     private readonly CafeContext _CafeContext;
 
-    public FoodRepo(CafeContext CafeContext) => _CafeContext = CafeContext;
+    public FoodRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
     public Food CreateNewFood(Food Food)
     {

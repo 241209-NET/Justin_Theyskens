@@ -21,9 +21,9 @@ public class FoodController : ControllerBase
     ];
 
     private readonly IFoodService _FoodService;
-    public FoodController(IFoodService FoodService)
+    public FoodController(IFoodService foodService)
     {
-        _FoodService = FoodService;
+        _FoodService = foodService;
     }
 
     [HttpGet("FoodMenu")]

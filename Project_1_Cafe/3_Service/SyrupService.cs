@@ -8,7 +8,7 @@ public class SyrupService : ISyrupService
 
     private readonly ISyrupRepo _SyrupRepository;
 
-    public SyrupService(ISyrupRepo SyrupRepository) => _SyrupRepository = SyrupRepository;
+    public SyrupService(ISyrupRepo syrupRepository) => _SyrupRepository = syrupRepository;
 
     public Syrup GetNewSyrup(Syrup syrup)
     {
