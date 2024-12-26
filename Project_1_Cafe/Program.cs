@@ -11,13 +11,13 @@ builder.Services.AddDbContext<CafeContext>(options =>
 
 
 
-builder.Services.AddDbContext<FoodContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
-builder.Services.AddDbContext<SyrupContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+// builder.Services.AddDbContext<FoodContext>(options => 
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+// builder.Services.AddDbContext<SyrupContext>(options => 
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 
-builder.Services.AddDbContext<OrderContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
+// builder.Services.AddDbContext<OrderContext>(options => 
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 
 
 

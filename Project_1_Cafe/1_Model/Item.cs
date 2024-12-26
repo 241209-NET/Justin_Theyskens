@@ -26,11 +26,7 @@ public abstract class Item
         set { _Price = Math.Round(value, 2); }
     }
 
-    public int ItemId
-    {
-        get {return _ItemId; }
-        set { _ItemId = value; }
-    }
+    public int ItemId { get; set; }
 
     public int OrderId 
     {
@@ -44,7 +40,7 @@ public abstract class Item
     {
         _Name = name;
         _Price = price;
-        _OrderId = id;
+        ItemId = id;
     }
 
     public Condiment AddCondiment(Condiment.CondimentType type)

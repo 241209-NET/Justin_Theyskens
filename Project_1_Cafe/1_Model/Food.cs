@@ -14,10 +14,11 @@ public class Food : Item
         GrilledCheeseSandwich,
     }
 
-    public FoodType SelectFoodTyper { get; set; }
+    public FoodType SelectFoodType { get; set; }
     public Food(FoodType type, double price, int id)
         : base(Utility.AddSpaces(nameof(type)), price, id)
-        {            
+        {        
+            SelectFoodType = type;  
         }
         
 }

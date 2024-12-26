@@ -7,25 +7,25 @@ namespace Cafe.API.Repo;
 
 public class OrderRepo : IOrderRepo
 {
-    private readonly OrderContext _OrderContext;
+    private readonly CafeContext _CafeContext;
 
-    public OrderRepo(OrderContext OrderContext) => _OrderContext = OrderContext;
+    public OrderRepo(CafeContext CafeContext) => _CafeContext = CafeContext;
 
     public Order GetNewOrder(Order Order)
     {
-        _OrderContext.Orders.Add(Order);
-        _OrderContext.SaveChanges();
+        _CafeContext.Orders.Add(Order);
+        _CafeContext.SaveChanges();
         return Order;
     }
     public IEnumerable<Order> GetAllOrders()
     {
-        return _OrderContext.Orders;
+        return _CafeContext.Orders;
     }
 
 
     public Order? GetOrderById(int id)
     {
-        return _OrderContext.Orders.Find(id);
+        return _CafeContext.Orders.Find(id);
     }
 
 }

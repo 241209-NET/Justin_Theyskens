@@ -10,9 +10,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cafe.Migrations
 {
-    [DbContext(typeof(OrderContext))]
-    [Migration("20241224190725_initialCreate")]
-    partial class initialCreate
+    [DbContext(typeof(CafeContext))]
+    [Migration("20241226173316_thirdBuild")]
+    partial class thirdBuild
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,28 @@ namespace Cafe.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Cafe.API.Items.Syrup", b =>
+                {
+                    b.Property<int>("SyrupId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SyrupId"));
+
+                    b.Property<int>("Flavor")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pumps")
+                        .HasColumnType("int");
+
+                    b.HasKey("SyrupId");
+
+                    b.ToTable("Syrups");
+                });
 
             modelBuilder.Entity("Cafe.Order", b =>
                 {

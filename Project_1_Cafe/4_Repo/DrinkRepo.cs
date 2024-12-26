@@ -6,9 +6,9 @@ namespace Cafe.API.Repo;
 
 public class DrinkRepo : IDrinkRepo
 {
-    private readonly DrinkContext _DrinkContext;
+    private readonly CafeContext _CafeContext;
 
-    public DrinkRepo(DrinkContext DrinkContext) => _DrinkContext = DrinkContext;
+    public DrinkRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
     public Drink CreateNewDrink(Drink Drink)
     {
@@ -27,12 +27,6 @@ public class DrinkRepo : IDrinkRepo
     public Drink? GetDrink(int itemID, int index)
     {
 
-        /* something like this
-        var drink? = something.FindById(itemID)
-        List<Drink> list = drink.Drinks;
-        var Drink = drink?.Drinks[index];
-        return Drink;
-        */
         throw new NotImplementedException();
     }
 

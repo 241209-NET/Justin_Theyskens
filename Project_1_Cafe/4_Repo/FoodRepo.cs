@@ -7,9 +7,9 @@ namespace Cafe.API.Repo;
 public class FoodRepo : IFoodRepo
 {
 
-    private readonly FoodContext _FoodContext;
+    private readonly CafeContext _CafeContext;
 
-    public FoodRepo(FoodContext FoodContext) => _FoodContext = FoodContext;
+    public FoodRepo(CafeContext CafeContext) => _CafeContext = CafeContext;
 
     public Food CreateNewFood(Food Food)
     {
