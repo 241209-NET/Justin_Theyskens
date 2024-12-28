@@ -27,14 +27,14 @@ public class Order
         }
     }
 
-    private List<Item> Items = [];
+    public List<ICafeItem> Items = [];
     public Order(string name)
     {
         Name = name;
         Id = NextOrder();
     }
 
-    public void AddItem(Item item)
+    public void AddItem(ICafeItem item)
     {
         if (item.OrderId == Id)
         {
