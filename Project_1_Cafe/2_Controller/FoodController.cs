@@ -42,23 +42,22 @@ public class FoodController : ControllerBase
     [HttpPost]
     public Food CreateNewFood(Food Food)
     {
-
-
-        //var newFood = _FoodServices.GetNewFood(Food);
-        throw new NotImplementedException();
+        var newFood = _FoodService.CreateNewFood(Food);
+        return newFood;
     }
 
     [HttpDelete]
-    public Food DeleteFood(Food Food)
+    public Food DeleteFood(int id)
     {
-
+        //var food = _FoodService.
         throw new NotImplementedException();
     }
 
     [HttpGet("{id}")]
-    public Food GetFoodByorder(int orderId)
+    public IEnumerable<Food> GetFoodByorder(int orderId)
     {
-        throw new NotImplementedException();
+        IEnumerable<Food> food = _FoodService.GetFoodsByOrder(orderId);
+        return food;
     }
 
 }

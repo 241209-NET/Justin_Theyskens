@@ -25,7 +25,7 @@ public class OrderController : ControllerBase
     [HttpPost]
     public IActionResult CreateNewOrder(Order newOrder)
     {
-        var Order = _OrderService.GetNewOrder(newOrder);
+        var Order = _OrderService.CreateNewOrder(newOrder);
         return Ok(Order);
     }
 

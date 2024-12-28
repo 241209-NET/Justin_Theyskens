@@ -9,4 +9,6 @@ public interface IDrinkRepo
     IEnumerable<Drink> GetDrinksByOrder(int orderId);
 
     Drink? GetDrink(int itemID, int index);
+
+    Drink? GetDrinkById(int id);
 }

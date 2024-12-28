@@ -9,24 +9,29 @@ public class FoodService : IFoodService
 
     public FoodService(IFoodRepo foodRepository) => _FoodRepository = foodRepository;
 
-    public Food CreateNewFood(Food Food)
+    public Food CreateNewFood(Food food)
     {
-        // TODO
-        return Food;
+        var newFood = _FoodRepository.CreateNewFood(food);
+        return newFood;
     }
     public IEnumerable<Food> GetAllFoods()
     {
-        // TODO
-        List<Food> list = [];
-        return list;
-
+        var allFood = _FoodRepository.GetAllFood();
+        return allFood;
     }
     
     public IEnumerable<Food> GetFoodsByOrder(int orderId)
     {
-        // TODO
-        throw new NotImplementedException();
+        var food = _FoodRepository.GetFoodsByOrder(orderId);
+        return food;
     }
 
-    //private readonly IFoodRepo;
+    public Food? GetFoodById(int id)
+    {
+        if (id < 0)
+            return null;
+
+        var food = _FoodRepository.GetFoodById(id);
+        return food!;
+    }
 }

@@ -8,9 +8,9 @@ public class OrderService : IOrderService
     private readonly IOrderRepo _OrderRepository;
 
     public OrderService(IOrderRepo orderRepository) => _OrderRepository = orderRepository;
-    public Order GetNewOrder(Order Order)
+    public Order CreateNewOrder(Order Order)
     {
-        return _OrderRepository.GetNewOrder(Order);
+        return _OrderRepository.CreateNewOrder(Order);
     }
     public IEnumerable<Order> GetAllOrders()
     {

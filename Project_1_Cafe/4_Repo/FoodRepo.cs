@@ -11,30 +11,27 @@ public class FoodRepo : IFoodRepo
 
     public FoodRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
-    public Food CreateNewFood(Food Food)
+    public Food CreateNewFood(Food food)
     {
-        throw new NotImplementedException();
+        _CafeContext.Food?.Add(food);
+        _CafeContext.SaveChanges();
+        return food;
     }
     public IEnumerable<Food> GetAllFood()
     {
-        throw new NotImplementedException();
+        return _CafeContext.Food!;
     }
 
-    public IEnumerable<Food> GetFoodsByDrink()
+    public IEnumerable<Food> GetFoodsByOrder(int orderId)
     {
-        throw new NotImplementedException();
+        var foodList = _CafeContext.Food?.Where(f => f.OrderId == orderId);
+        return foodList!;
     }
 
-    public Food? GetFood(int itemID, int index)
+    public Food? GetFoodById(int id)
     {
-
-        /* something like this
-        var drink? = something.FindById(itemID)
-        List<Food> list = drink.Foods;
-        var Food = drink?.Foods[index];
-        return Food;
-        */
-        throw new NotImplementedException();
+        var food = _CafeContext.Food?.Find(id);
+        return food;
     }
 
 }

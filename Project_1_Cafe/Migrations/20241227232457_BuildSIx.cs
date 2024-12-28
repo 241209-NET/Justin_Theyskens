@@ -5,7 +5,7 @@
 namespace Cafe.Migrations
 {
     /// <inheritdoc />
-    public partial class thirdBuild : Migration
+    public partial class BuildSIx : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

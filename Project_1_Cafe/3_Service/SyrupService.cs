@@ -10,16 +10,16 @@ public class SyrupService : ISyrupService
 
     public SyrupService(ISyrupRepo syrupRepository) => _SyrupRepository = syrupRepository;
 
-    public Syrup GetNewSyrup(Syrup syrup)
+    public Syrup CreateNewSyrup(Syrup syrup)
     {
-        // TODO
-        return syrup;
+        var newSyrup = _SyrupRepository.CreateNewSyrup(syrup);
+        return newSyrup;
     }
 
-    public Syrup GetSyrupById(int syrupID)
+    public Syrup GetSyrupById(int id)
     {
-        // TODO
-        return new Syrup(Syrup.SyrupFlavor.Vanilla, 1);
+        var syrup = _SyrupRepository.GetSyrupById(id);
+        return syrup!;
     }
 
     public IEnumerable<Syrup> GetAllSyrups()
@@ -29,7 +29,7 @@ public class SyrupService : ISyrupService
 
     public IEnumerable<Syrup> GetSyrupsByDrink(int itemID)
     {
-        // TODO
-        throw new NotImplementedException();        
+        var syrups = _SyrupRepository.GetSyrupsByDrink(itemID);
+        return syrups;        
     }
 }

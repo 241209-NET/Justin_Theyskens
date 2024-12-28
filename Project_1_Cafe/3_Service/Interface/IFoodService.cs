@@ -8,5 +8,7 @@ public interface IFoodService
     IEnumerable<Food> GetAllFoods();
     
     IEnumerable<Food> GetFoodsByOrder(int orderID);
+
+    Food GetFoodById(int id);
     
 }

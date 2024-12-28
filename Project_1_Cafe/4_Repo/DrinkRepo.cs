@@ -10,9 +10,11 @@ public class DrinkRepo : IDrinkRepo
 
     public DrinkRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
-    public Drink CreateNewDrink(Drink Drink)
+    public Drink CreateNewDrink(Drink drink)
     {
-        throw new NotImplementedException();
+        _CafeContext.Drinks?.Add(drink);
+        _CafeContext.SaveChanges();
+        return drink;
     }
     public IEnumerable<Drink> GetAllDrinks()
     {
@@ -27,6 +29,11 @@ public class DrinkRepo : IDrinkRepo
     public Drink? GetDrink(int itemID, int index)
     {
 
+        throw new NotImplementedException();
+    }
+
+    public Drink? GetDrinkById(int id)
+    {
         throw new NotImplementedException();
     }
 

@@ -13,23 +13,28 @@ public class SyrupRepo : ISyrupRepo
     public SyrupRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
 
-    public Syrup GetNewSyrup(Syrup syrup)
+    public Syrup CreateNewSyrup(Syrup syrup)
     {
-        throw new NotImplementedException();
+       _CafeContext.Syrups?.Add(syrup);
+       _CafeContext.SaveChanges();
+       return syrup;
     }
     public IEnumerable<Syrup> GetAllSyrups()
     {
-        throw new NotImplementedException();
+        var syrups = _CafeContext.Syrups;
+        return syrups!;
     }
 
-    public IEnumerable<Syrup> GetSyrupsByDrink()
+    public IEnumerable<Syrup> GetSyrupsByDrink(int id)
     {
-        throw new NotImplementedException();
+        var syrups = _CafeContext.Syrups?.Where(s => s.ItemId == id);
+        return syrups!;
     }
 
-    public Syrup? GetSyrup(int itemID, int index)
+    public Syrup? GetSyrupById(int id)
     {
-        throw new NotImplementedException();
+        var syrup = _CafeContext.Syrups?.Find(id);
+        return syrup!;
     }
 
 }

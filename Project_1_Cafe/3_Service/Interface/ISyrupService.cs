@@ -4,7 +4,7 @@ namespace Cafe.API.Service;
 
 public interface ISyrupService
 {
-    Syrup GetNewSyrup(Syrup syrup);
+    Syrup CreateNewSyrup(Syrup syrup);
     Syrup GetSyrupById(int syrupID);
     IEnumerable<Syrup> GetAllSyrups();
     IEnumerable<Syrup> GetSyrupsByDrink(int itemID);

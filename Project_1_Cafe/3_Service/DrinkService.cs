@@ -23,11 +23,12 @@ public class DrinkService : IDrinkService
     public IEnumerable<Drink> GetDrinksByOrder(int orderId)
     {
         var drinks = _DrinkRepository.GetDrinksByOrder(orderId);
-        throw new NotImplementedException();
+        return drinks;
     }
 
-    public Drink GetDrinkById(int itemId)
+    public Drink? GetDrinkById(int id)
     {
-        throw new NotImplementedException();
+        var drink = _DrinkRepository.GetDrinkById(id);
+        return drink;
     }
 }

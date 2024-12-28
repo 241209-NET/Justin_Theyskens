@@ -4,9 +4,9 @@ namespace Cafe.API.Repo;
 
 public interface ISyrupRepo
 {
-    Syrup GetNewSyrup(Syrup syrup);
+    Syrup CreateNewSyrup(Syrup syrup);
     IEnumerable<Syrup> GetAllSyrups();
-    IEnumerable<Syrup> GetSyrupsByDrink();
+    IEnumerable<Syrup> GetSyrupsByDrink(int id);
 
-    Syrup? GetSyrup(int itemID, int index);
+    Syrup? GetSyrupById(int id);
 }

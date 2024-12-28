@@ -27,7 +27,7 @@ public class SyrupController : ControllerBase
     public IActionResult GetNewSyrup(Syrup syrup)
     {
 
-        var newSyrup = _SyrupService.GetNewSyrup(syrup);
+        var newSyrup = _SyrupService.CreateNewSyrup(syrup);
         return Ok(newSyrup);
     }
 

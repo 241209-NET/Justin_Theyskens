@@ -6,7 +6,7 @@ public interface IFoodRepo
 {
     Food CreateNewFood(Food Food);
     IEnumerable<Food> GetAllFood();
-    IEnumerable<Food> GetFoodsByDrink();
+    IEnumerable<Food> GetFoodsByOrder(int orderId);
 
-    Food? GetFood(int itemID, int index);
+    Food? GetFoodById(int id);
 }

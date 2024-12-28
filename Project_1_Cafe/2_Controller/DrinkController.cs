@@ -11,12 +11,12 @@ public class DrinkController : ControllerBase
 {
     public List<string> DrinkMenu = 
     [
-        "water\n",
-        "Coffee\n",
-        "Tea\n",
-        "Latte\n",
-        "Cappucino\n",
-        "Macchiato\n"
+        "water",
+        "Coffee",
+        "Tea",
+        "Latte",
+        "Cappucino",
+        "Macchiato",
     ];
 
     private readonly IDrinkService _DrinkService;

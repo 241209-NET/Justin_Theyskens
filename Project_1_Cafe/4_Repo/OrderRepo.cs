@@ -11,21 +11,21 @@ public class OrderRepo : IOrderRepo
 
     public OrderRepo(CafeContext cafeContext) => _CafeContext = cafeContext;
 
-    public Order GetNewOrder(Order Order)
+    public Order CreateNewOrder(Order Order)
     {
-        _CafeContext.Orders.Add(Order);
+        _CafeContext.Orders?.Add(Order);
         _CafeContext.SaveChanges();
         return Order;
     }
     public IEnumerable<Order> GetAllOrders()
     {
-        return _CafeContext.Orders;
+        return _CafeContext.Orders!;
     }
 
 
     public Order? GetOrderById(int id)
     {
-        return _CafeContext.Orders.Find(id);
+        return _CafeContext.Orders?.Find(id);
     }
 
 }

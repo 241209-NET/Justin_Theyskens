@@ -44,14 +44,4 @@ public abstract class Item
         ItemId = id;
     }
 
-    public Condiment AddCondiment(Condiment.CondimentType type)
-    {
-        var newCondiment = new Condiment(type, Utility.SetItemId(this));
-        Condiments.Add(newCondiment);
-
-        newCondiment.ItemId = _ItemId;
-
-        return newCondiment;
-    }
-
 }
