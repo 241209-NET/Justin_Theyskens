@@ -26,12 +26,13 @@ public class FoodService : IFoodService
         return food;
     }
 
-    public Food? GetFoodById(int id)
+    public Food GetFoodById(int id)
     {
-        if (id < 0)
-            return null;
+        // if (id < 0)
+        //     return null;
 
         var food = _FoodRepository.GetFoodById(id);
+
         return food!;
     }
 }

@@ -17,11 +17,8 @@ public class OrderService : IOrderService
         return _OrderRepository.GetAllOrders();
     }
     
-    public Order? GetOrderById(int orderId)
+    public Order GetOrderById(int orderId)
     {
-        if (orderId < 0) 
-            return null;
-
         return _OrderRepository.GetOrderById(orderId)!;
     }
 }

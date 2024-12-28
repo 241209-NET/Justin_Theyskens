@@ -26,9 +26,9 @@ public class DrinkService : IDrinkService
         return drinks;
     }
 
-    public Drink? GetDrinkById(int id)
+    public Drink GetDrinkById(int id)
     {
         var drink = _DrinkRepository.GetDrinkById(id);
-        return drink;
+        return drink!;
     }
 }
