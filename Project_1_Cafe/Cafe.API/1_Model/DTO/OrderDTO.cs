@@ -22,4 +22,5 @@ public class OrderOutDTO
 
     public List<OrderInDTO> OrdersDTO = [];
     public List<FoodInDTO> FoodsDTO = [];
+    public List<DrinkInDTO> DrinksDTO = [];
 }

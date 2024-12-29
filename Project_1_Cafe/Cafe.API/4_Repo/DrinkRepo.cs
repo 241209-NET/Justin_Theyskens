@@ -18,7 +18,7 @@ public class DrinkRepo : IDrinkRepo
     }
     public IEnumerable<Drink> GetAllDrinks()
     {
-        throw new NotImplementedException();
+        return _CafeContext.Drinks!;
     }
 
     public IEnumerable<Drink> GetDrinksByOrder(int orderId)

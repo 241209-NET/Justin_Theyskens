@@ -13,12 +13,12 @@ public class FoodController : ControllerBase
 
     public List<string> FoodMenu = 
     [
-        "Butter Croissant",
-        "Ham & Swiss Croissant",
-        "Chocolate Croissant",
-        "Bacon, Egg, & Cheddar Sandwich",
-        "Bacon, Egg, & Gouda Sandwich",
-        "Grilled Cheese Sandwich",
+        "1. Butter Croissant",
+        "2. Ham & Swiss Croissant",
+        "3. Chocolate Croissant",
+        "4. Bacon, Egg, & Cheddar Sandwich",
+        "5. Bacon, Egg, & Gouda Sandwich",
+        "6. Grilled Cheese Sandwich",
     ];
 
     private readonly IFoodService _FoodService;

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Cafe.API.Items;
 using Cafe.API.Service;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Cafe.API.DTOs;
 
 namespace Cafe.API.Controller;
 
@@ -11,12 +12,12 @@ public class DrinkController : ControllerBase
 {
     public List<string> DrinkMenu = 
     [
-        "water",
-        "Coffee",
-        "Tea",
-        "Latte",
-        "Cappucino",
-        "Macchiato",
+        "1. water",
+        "2. Coffee",
+        "3. Tea",
+        "4. Latte",
+        "5. Cappucino",
+        "6. Macchiato",
     ];
 
     private readonly IDrinkService _DrinkService;
@@ -51,7 +52,6 @@ public class DrinkController : ControllerBase
     public IActionResult GetDrinksByOrder(int id)
     {
         var drinks = _DrinkService.GetDrinksByOrder(id);
-
         return Ok(drinks);
     }
 

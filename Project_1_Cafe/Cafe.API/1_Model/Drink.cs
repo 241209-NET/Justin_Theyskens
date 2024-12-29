@@ -15,12 +15,12 @@ public class Drink : ICafeItem
 
     public enum DrinkType
     {
-        water,
-        Coffee,
-        Tea,
-        Latte,
-        Cappucino,
-        Macchiato
+        water = 1,
+        Coffee = 2,
+        Tea = 3,
+        Latte = 4,
+        Cappucino = 5,
+        Macchiato = 6
     }
 
     public int Id { get; set; }
@@ -44,7 +44,7 @@ public class Drink : ICafeItem
     {
         Id = GetId();
         Size = size;
-        Name = nameof(type);
+        Name = Enum.GetName(type)!;
         Type = type;
         Item = ItemType.Drink;
         Price = GetPrice();
@@ -57,7 +57,7 @@ public class Drink : ICafeItem
         Syrups.Add(syrup);
         
         syrup.ItemId = Id;
-        string sName = nameof(flavor);
+        string sName = Enum.GetName(flavor)!;
         UpdateName(sName);
         UpdatePrice();
 

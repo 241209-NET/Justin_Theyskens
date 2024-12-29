@@ -24,7 +24,7 @@ public class Food : ICafeItem
     public Food(FoodType type)
     {
         Id = GetId();
-        Name = Utility.AddSpaces(nameof(type));
+        Name = Utility.AddSpaces(Enum.GetName(type)!);
         Type = type;
         Item = ItemType.Food; 
         Price = GetPrice();       

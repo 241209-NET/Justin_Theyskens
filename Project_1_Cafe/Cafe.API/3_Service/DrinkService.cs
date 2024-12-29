@@ -1,3 +1,5 @@
+using AutoMapper;
+using Cafe.API.DTOs;
 using Cafe.API.Items;
 using Cafe.API.Repo;
 
@@ -6,24 +8,32 @@ namespace Cafe.API.Service;
 public class DrinkService : IDrinkService
 {
     private readonly IDrinkRepo _DrinkRepository;
+    private readonly IMapper _Mapper;
 
-    public DrinkService(IDrinkRepo drinkRepository) => _DrinkRepository = drinkRepository;
-    public Drink CreateNewDrink(Drink drink)
+    public DrinkService(IDrinkRepo drinkRepository, IMapper mapper)
+    {
+        _DrinkRepository = drinkRepository;
+        _Mapper = mapper;
+    }
+    public DrinkInDTO CreateNewDrink(Drink drink)
     {
         var newDrink = _DrinkRepository.CreateNewDrink(drink);
-        return newDrink;
+        var drinkDTO = _Mapper.Map<DrinkInDTO>(newDrink);
+        return drinkDTO;
     }
-    public IEnumerable<Drink> GetAllDrinks()
+    public IEnumerable<DrinkOutDTO> GetAllDrinks()
     {
         var drinks = _DrinkRepository.GetAllDrinks();
-        return drinks;
+        var drinksDTO = _Mapper.Map<List<DrinkOutDTO>>(drinks);
+        return drinksDTO;
 
     }
     
-    public IEnumerable<Drink> GetDrinksByOrder(int orderId)
+    public IEnumerable<DrinkOutDTO> GetDrinksByOrder(int orderId)
     {
         var drinks = _DrinkRepository.GetDrinksByOrder(orderId);
-        return drinks;
+        var drinksDTO = _Mapper.Map<List<DrinkOutDTO>>(drinks);
+        return drinksDTO;
     }
 
     public Drink GetDrinkById(int id)
