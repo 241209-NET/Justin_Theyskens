@@ -20,4 +20,5 @@ public class OrderOutDTO
     public int Id {get; set; }
 
     public List<OrderInDTO> OrdersDTO = [];
+    public List<FoodInDTO> FoodsDTO = [];
 }
