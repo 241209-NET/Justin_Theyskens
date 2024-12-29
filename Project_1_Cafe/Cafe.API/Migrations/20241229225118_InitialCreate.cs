@@ -5,7 +5,7 @@
 namespace Cafe.Migrations
 {
     /// <inheritdoc />
-    public partial class BuildFive : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -11,5 +11,10 @@ public class MappingProfile : Profile
             .ForMember(s => s.FoodsDTO, c => c.MapFrom(m => m.Items.Where(i => i is Food)));
 
         CreateMap<Order, OrderInDTO>().ReverseMap();
+
+        CreateMap<Food, FoodOutDTO>();
+            //.ForMember(s => s.FoodsDTO, c => c.MapFrom(m => m.Items.Where(i => i is Food)));
+
+        CreateMap<Food, FoodInDTO>().ReverseMap(); 
     }
 }

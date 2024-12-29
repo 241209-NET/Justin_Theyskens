@@ -11,17 +11,6 @@ builder.Services.AddDbContext<CafeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 
 
-
-// builder.Services.AddDbContext<FoodContext>(options => 
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
-// builder.Services.AddDbContext<SyrupContext>(options => 
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
-
-// builder.Services.AddDbContext<OrderContext>(options => 
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
-
-
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -49,9 +38,6 @@ builder.Services.AddControllers()
 
 
 var app = builder.Build();
-
-//context for each item in db
-//builder.Services.AddDbContext<SyrupContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Cafe")));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
