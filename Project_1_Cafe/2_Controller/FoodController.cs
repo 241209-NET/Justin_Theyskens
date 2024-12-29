@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Cafe.API.Items;
 using Cafe.API.Service;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Cafe.API.DTOs;
 
 namespace Cafe.API.Controller;
 
@@ -40,10 +41,10 @@ public class FoodController : ControllerBase
     }
 
     [HttpPost]
-    public Food CreateNewFood(Food Food)
+    public IActionResult CreateNewFood(Food Food)
     {
         var newFood = _FoodService.CreateNewFood(Food);
-        return newFood;
+        return Ok(newFood);
     }
 
     [HttpDelete]
@@ -54,10 +55,11 @@ public class FoodController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public IEnumerable<Food> GetFoodByorder(int orderId)
+    public IActionResult GetFoodByorder(int orderId)
     {
-        IEnumerable<Food> food = _FoodService.GetFoodsByOrder(orderId);
-        return food;
+        IEnumerable<FoodOutDTO> food = _FoodService.GetFoodsByOrder(orderId);
+
+        return Ok(food);
     }
 
 }

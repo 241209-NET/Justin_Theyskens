@@ -1,13 +1,14 @@
+using Cafe.API.DTOs;
 using Cafe.API.Items;
 
 namespace Cafe.API.Service;
 
 public interface IFoodService
 {
-    Food CreateNewFood(Food Food);
-    IEnumerable<Food> GetAllFoods();
+    FoodInDTO CreateNewFood(Food Food);
+    IEnumerable<FoodOutDTO> GetAllFoods();
     
-    IEnumerable<Food> GetFoodsByOrder(int orderID);
+    IEnumerable<FoodOutDTO> GetFoodsByOrder(int orderID);
 
     Food GetFoodById(int id);
     

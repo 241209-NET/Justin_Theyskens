@@ -1,3 +1,5 @@
+using AutoMapper;
+using Cafe.API.DTOs;
 using Cafe.API.Items;
 using Cafe.API.Repo;
 
@@ -6,15 +8,25 @@ namespace Cafe.API.Service;
 public class OrderService : IOrderService
 {
     private readonly IOrderRepo _OrderRepository;
+    private readonly IMapper _Mapper;
 
-    public OrderService(IOrderRepo orderRepository) => _OrderRepository = orderRepository;
-    public Order CreateNewOrder(Order Order)
+    public OrderService(IOrderRepo orderRepository, IMapper mapper)
     {
-        return _OrderRepository.CreateNewOrder(Order);
+        _OrderRepository = orderRepository;
+        _Mapper = mapper;
     }
-    public IEnumerable<Order> GetAllOrders()
+    
+    public OrderInDTO CreateNewOrder(Order order)
     {
-        return _OrderRepository.GetAllOrders();
+        var newOrder = _OrderRepository.CreateNewOrder(order);
+        var orderDTO = _Mapper.Map<OrderInDTO>(newOrder);
+        return orderDTO;
+    }
+    public IEnumerable<OrderOutDTO> GetAllOrders()
+    {
+        var orderList = _OrderRepository.GetAllOrders();
+        var orderDtoList = _Mapper.Map<List<OrderOutDTO>>(orderList);
+        return orderDtoList;
     }
     
     public Order GetOrderById(int orderId)

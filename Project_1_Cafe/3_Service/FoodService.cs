@@ -1,3 +1,5 @@
+using AutoMapper;
+using Cafe.API.DTOs;
 using Cafe.API.Items;
 using Cafe.API.Repo;
 
@@ -6,32 +8,38 @@ namespace Cafe.API.Service;
 public class FoodService : IFoodService
 {
     private readonly IFoodRepo _FoodRepository;
+    private readonly IMapper _Mapper;
 
-    public FoodService(IFoodRepo foodRepository) => _FoodRepository = foodRepository;
+    public FoodService(IFoodRepo foodRepository, IMapper mapper)
+    {
+        _FoodRepository = foodRepository;
+        _Mapper = mapper;
+    }
 
-    public Food CreateNewFood(Food food)
+    public FoodInDTO CreateNewFood(Food food)
     {
         var newFood = _FoodRepository.CreateNewFood(food);
-        return newFood;
+        var foodDTO = _Mapper.Map<FoodInDTO>(newFood);
+        return foodDTO;
     }
-    public IEnumerable<Food> GetAllFoods()
+    public IEnumerable<FoodOutDTO> GetAllFoods()
     {
         var allFood = _FoodRepository.GetAllFood();
-        return allFood;
+        var foodDtoList = _Mapper.Map<List<FoodOutDTO>>(allFood);
+        return foodDtoList;
     }
     
-    public IEnumerable<Food> GetFoodsByOrder(int orderId)
+    public IEnumerable<FoodOutDTO> GetFoodsByOrder(int orderId)
     {
-        var food = _FoodRepository.GetFoodsByOrder(orderId);
-        return food;
+        var foodList = _FoodRepository.GetFoodsByOrder(orderId);
+        var foodDtoList = _Mapper.Map<List<FoodOutDTO>>(foodList);
+        return foodDtoList;
     }
 
     public Food GetFoodById(int id)
     {
-        // if (id < 0)
-        //     return null;
-
         var food = _FoodRepository.GetFoodById(id);
+        //var foodDTO = _Mapper.Map<FoodOutDTO>(food);
 
         return food!;
     }

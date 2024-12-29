@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Cafe.API.Data;
 using Cafe.API.Repo;
 using Cafe.API.Service;
+using Cafe.API.Items;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,9 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IFoodRepo, FoodRepo>();
 builder.Services.AddScoped<ISyrupRepo, SyrupRepo>();
 builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+
+//Add automapper
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 //Add our controllers
 builder.Services.AddControllers()

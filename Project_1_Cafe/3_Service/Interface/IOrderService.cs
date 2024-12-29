@@ -1,11 +1,12 @@
+using Cafe.API.DTOs;
 using Cafe.API.Items;
 
 namespace Cafe.API.Service;
 
 public interface IOrderService
 {
-    Order CreateNewOrder(Order Order);
-    IEnumerable<Order> GetAllOrders();
+    OrderInDTO CreateNewOrder(Order Order);
+    IEnumerable<OrderOutDTO> GetAllOrders();
     
     Order GetOrderById(int id);
     
