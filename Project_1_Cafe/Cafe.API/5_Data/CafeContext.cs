@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Cafe.API.Items;
+
 namespace Cafe.API.Data;
 
-public class CafeContext :DbContext
+public class CafeContext : DbContext
 {
     public CafeContext() {}
 
