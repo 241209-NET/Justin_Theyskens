@@ -7,4 +7,6 @@ public interface IOrderRepo
     Order CreateNewOrder(Order Order);
     IEnumerable<Order> GetAllOrders();
     Order? GetOrderById(int id);
+
+    Order? DeleteOrderById(int id);
 }

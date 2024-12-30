@@ -12,20 +12,7 @@ public class Order
 
     public double Tax = 0.09;
 
-    public double Total
-    {
-        get 
-        {
-            double total = 0;
-            foreach (var item in Items)
-            {
-                total += item.Price;
-            }
-            total = total + (total * Tax);
-
-            return Math.Round(total, 2);
-        }
-    }
+    public double Total { get; set; }
 
     public List<ICafeItem> Items = [];
     public Order(string name)
@@ -39,10 +26,26 @@ public class Order
         if (item.OrderId == Id)
         {
             Items.Add(item);
-            Console.WriteLine($"{item} has been added to the order.");
+            UpdateTotal();
+            Console.WriteLine($"Item has been added to order number: {Id}.");
+            Console.WriteLine($"For a total of: {Items.Count} items.");
+            Console.WriteLine($"{Name}'s new total is: {Total}.");
+            return;
         }
             
         Console.WriteLine("That item does not belong to this order.");
+    }
+
+    public void UpdateTotal()
+    {
+        double total = 0;
+        foreach (var item in Items)
+        {
+            total += item.Price;
+        }
+        total = total + (total * Tax);
+
+        Total = Math.Round(total, 2);
     }
 
     private static int NextOrder()

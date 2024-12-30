@@ -13,7 +13,10 @@ public class FoodRepo : IFoodRepo
 
     public Food CreateNewFood(Food food)
     {
+        food.SetVariables();
         _CafeContext.Food?.Add(food);
+        Order order = _CafeContext.Orders?.Find(food.OrderId)!;
+        order?.AddItem(food);
         _CafeContext.SaveChanges();
         return food;
     }

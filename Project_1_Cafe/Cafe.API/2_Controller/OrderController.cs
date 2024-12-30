@@ -38,4 +38,25 @@ public class OrderController : ControllerBase
         
         return Ok(findOrder);
     }
+
+    // [HttpPut]
+    // public IActionResult UpdateOrder(int id, ICafeItem item)
+    // {
+    //     var order = _OrderService.GetOrderById(id);
+    //     if(order is null) return NotFound();
+
+    //     order.AddItem(item);
+    //     string confirm = $"{item.Name} added to {order.Name}'s order";
+    //     return Ok(confirm);
+    // }
+
+    [HttpDelete]
+    public IActionResult DeleteOrder(int id)
+    {
+        var toDelete = _OrderService.GetOrderById(id);
+        if (toDelete == null)
+            return NotFound();
+        else
+            return Ok(toDelete);
+    }
 }

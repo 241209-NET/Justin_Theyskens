@@ -41,4 +41,11 @@ public class DrinkService : IDrinkService
         var drink = _DrinkRepository.GetDrinkById(id);
         return drink!;
     }
+
+    public Drink UpdateDrink(int id)
+    {
+        var drink = _DrinkRepository.GetDrinkById(id);
+        //TODO: add to this?
+        return drink!;
+    }
 }

@@ -10,6 +10,7 @@ namespace Cafe.API.Controller;
 [ApiController]
 public class DrinkController : ControllerBase
 {
+
     public List<string> DrinkMenu = 
     [
         "1. water",
@@ -43,7 +44,6 @@ public class DrinkController : ControllerBase
     public IActionResult CreateNewDrink(Drink drink)
     {
         var newDrink = _DrinkService.CreateNewDrink(drink);
-
         return Ok(newDrink);
     }
 
@@ -55,10 +55,22 @@ public class DrinkController : ControllerBase
         return Ok(drinks);
     }
 
+    [HttpPut]
+    public IActionResult UpdateDrink(Drink updatedDrink)
+    {
+        var drink = _DrinkService.GetDrinkById(updatedDrink.Id);
+
+        return Ok(drink);
+    }
+
     [HttpDelete]
     public IActionResult DeleteDrink(int id)
     {
-        return NotFound();
+        var toDelete = _DrinkService.GetDrinkById(id);
+        if (toDelete == null)
+            return NotFound();
+        else
+            return Ok(toDelete);
     }
 
 }

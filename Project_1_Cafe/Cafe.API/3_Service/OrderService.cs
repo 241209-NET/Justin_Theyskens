@@ -33,4 +33,14 @@ public class OrderService : IOrderService
     {
         return _OrderRepository.GetOrderById(orderId)!;
     }
+
+    public Order DeleteOrderById(int id)
+    {
+        var order = GetOrderById(id);
+
+        if(order is not null) 
+            _OrderRepository.DeleteOrderById(id);
+
+        return order!;
+    }
 }

@@ -17,11 +17,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Dependency Inject the proper services
+builder.Services.AddScoped<IDrinkService, DrinkService>();
 builder.Services.AddScoped<IFoodService, FoodService>();
 builder.Services.AddScoped<ISyrupService, SyrupService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
 //Dependency Inject the proper repositories
+builder.Services.AddScoped<IDrinkRepo, DrinkRepo>();
 builder.Services.AddScoped<IFoodRepo, FoodRepo>();
 builder.Services.AddScoped<ISyrupRepo, SyrupRepo>();
 builder.Services.AddScoped<IOrderRepo, OrderRepo>();

@@ -4,6 +4,7 @@ namespace Cafe.API.Items;
 
 public class Food : ICafeItem
 {
+    private static int _FoodIndex;
     public enum FoodType
     {
         ButterCroissant = 1,
@@ -33,7 +34,8 @@ public class Food : ICafeItem
 
     public int GetId()
     {
-        return 0;
+        _FoodIndex ++;
+        return _FoodIndex;
     }
 
     public double GetPrice()
@@ -43,5 +45,17 @@ public class Food : ICafeItem
             case FoodType.GrilledCheeseSandwich: return 7.99;
             default: return 6.99;
         }
+    }
+
+    public string GetName()
+    {
+         return Utility.AddSpaces(Enum.GetName(Type)!);
+    }
+
+    public void SetVariables()
+    {
+        Name = GetName();
+        Price = GetPrice();
+        Item = ItemType.Food; 
     }
 }

@@ -12,7 +12,10 @@ public class DrinkRepo : IDrinkRepo
 
     public Drink CreateNewDrink(Drink drink)
     {
+        drink.SetVariables();
         _CafeContext.Drinks?.Add(drink);
+        Order order = _CafeContext.Orders?.Find(drink.OrderId)!;
+        order?.AddItem(drink);
         _CafeContext.SaveChanges();
         return drink;
     }
@@ -23,18 +26,14 @@ public class DrinkRepo : IDrinkRepo
 
     public IEnumerable<Drink> GetDrinksByOrder(int orderId)
     {
-        throw new NotImplementedException();
-    }
-
-    public Drink? GetDrink(int itemID, int index)
-    {
-
-        throw new NotImplementedException();
+        var drinkList = _CafeContext.Drinks?.Where(d => d.OrderId == orderId);
+        return drinkList!;
     }
 
     public Drink? GetDrinkById(int id)
     {
-        throw new NotImplementedException();
+        var drink = _CafeContext.Drinks?.Find(id);
+        return drink!;
     }
 
 }

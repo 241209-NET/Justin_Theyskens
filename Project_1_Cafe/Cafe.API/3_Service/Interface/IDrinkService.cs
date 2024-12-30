@@ -10,6 +10,6 @@ public interface IDrinkService
     
     IEnumerable<DrinkOutDTO> GetDrinksByOrder(int orderId);
 
-    Drink GetDrinkById(int itemId);
+    Drink GetDrinkById(int id);
     
 }

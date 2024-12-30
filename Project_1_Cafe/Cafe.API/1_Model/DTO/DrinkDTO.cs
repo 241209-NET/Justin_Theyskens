@@ -13,7 +13,7 @@ public class DrinkInDTO
     {
         get
         {
-            return $"{Utility.AddSpaces(Enum.GetName(Size)!)} {Utility.AddSpaces(Enum.GetName(Type)!)}";
+            return Utility.AddSpaces(Enum.GetName(Type)!);
         }
     }
 
@@ -35,7 +35,7 @@ public class DrinkOutDTO
     {
         get
         {
-            return $"{Utility.AddSpaces(Enum.GetName(Size)!)} {Utility.AddSpaces(Enum.GetName(Type)!)}";
+            return Utility.AddSpaces(Enum.GetName(Type)!);
         }
     }
 

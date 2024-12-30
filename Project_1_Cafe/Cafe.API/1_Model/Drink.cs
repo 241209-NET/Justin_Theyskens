@@ -6,11 +6,12 @@ namespace Cafe.API.Items;
 
 public class Drink : ICafeItem
 {
+    private static int _DrinkIndex;
     public enum DrinkSize
     {
-        Tall,
-        Grande,
-        Venti
+        Tall = 1,
+        Grande = 2,
+        Venti = 3
     }
 
     public enum DrinkType
@@ -31,12 +32,7 @@ public class Drink : ICafeItem
     public DrinkSize Size { get; set; }
     public DrinkType Type { get; set; }
 
-    private int _Shots;
-    public int Shots
-    {
-        get { return _Shots; }
-        set { _Shots = value; }
-    }
+    public int Shots { get; set; }
 
     public List<Syrup> Syrups = [];
 
@@ -83,11 +79,11 @@ public class Drink : ICafeItem
         switch(Type)
         {
             case DrinkType.water: return 0;
-            case DrinkType.Cappucino: return 6.99;
-            case DrinkType.Coffee: return 3.99;
-            case DrinkType.Latte: return 5.89;
-            case DrinkType.Tea: return 2.99;
-            default: return 1.99;
+            case DrinkType.Cappucino: return 6.99 + ((int)Size * 0.2);
+            case DrinkType.Coffee: return 3.99 + ((int)Size * 0.2);
+            case DrinkType.Latte: return 5.89 + ((int)Size * 0.2);
+            case DrinkType.Tea: return 2.99 + ((int)Size * 0.2);
+            default: return 1.99 + ((int)Size * 0.2);
         }
     }
 
@@ -98,12 +94,33 @@ public class Drink : ICafeItem
 
     public int AddShots(int amount)
     {
-        _Shots += amount;
-        return _Shots;
+        Shots += amount;
+        return Shots;
     }
 
     public int GetId()
     {
+        _DrinkIndex ++;
+        return _DrinkIndex;
+    }
+    public int GetShots()
+    {
+        if(Type == DrinkType.Latte || Type == DrinkType.Cappucino || Type == DrinkType.Macchiato)
+        {
+            if (Size == DrinkSize.Tall)
+                return 1;
+            else
+                return 2;
+        }
+        
         return 0;
+    }
+
+    public void SetVariables()
+    {
+        Name = Enum.GetName(Type)!;
+        Item = ItemType.Drink;
+        Price = GetPrice(); 
+        Shots = GetShots();
     }
 }

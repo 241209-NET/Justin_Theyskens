@@ -2,6 +2,7 @@ using Cafe.API.Service;
 using Cafe.API.Items;
 using Cafe.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Cafe.API.Repo;
 
@@ -22,10 +23,24 @@ public class OrderRepo : IOrderRepo
         return _CafeContext.Orders!;
     }
 
-
     public Order? GetOrderById(int id)
     {
         return _CafeContext.Orders?.Find(id);
+    }
+
+    public Order DeleteOrderById(int id)
+    {
+        var order = _CafeContext.Orders?.Where( o => o.Id == id);
+        _CafeContext.Orders?.Remove((Order)order!);
+        return (Order)order!;
+
+    }
+
+    public Order DeleteOrder(Order order)
+    {
+        _CafeContext.Orders?.Remove(order);
+        _CafeContext.SaveChanges();
+        return order;
     }
 
 }

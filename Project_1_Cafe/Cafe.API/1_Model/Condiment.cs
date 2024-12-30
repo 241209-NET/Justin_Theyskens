@@ -2,6 +2,7 @@ namespace Cafe.API.Items;
 
 public class Condiment : ICafeItem
 {
+    private static int _CondimentIndex;
     public enum CondimentType
     {
         ketchup,
@@ -19,7 +20,7 @@ public class Condiment : ICafeItem
 
     public CondimentType Type { get; set; }
 
-    public Condiment(CondimentType type, int id)
+    public Condiment(CondimentType type)
     {
         Name = nameof(type);
         Id = GetId();
@@ -34,6 +35,7 @@ public class Condiment : ICafeItem
     }
     public int GetId()
     {
-        return 0;
+        _CondimentIndex ++;
+        return _CondimentIndex;
     }
 }
