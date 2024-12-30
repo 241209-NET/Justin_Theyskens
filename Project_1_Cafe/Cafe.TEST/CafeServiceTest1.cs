@@ -1,11 +1,11 @@
-﻿using Moq;
+using Moq;
 using Cafe.API.Items;
 using Cafe.API.Service;
 using Cafe.API.Repo;
 using AutoMapper;
 using Cafe.API.DTOs;
 
-namespace Cafe.Test;
+namespace Cafe.TEST;
 
 public class UnitTest1
 {
