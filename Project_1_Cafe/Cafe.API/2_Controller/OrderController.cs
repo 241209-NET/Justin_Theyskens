@@ -53,7 +53,7 @@ public class OrderController : ControllerBase
     [HttpDelete]
     public IActionResult DeleteOrder(int id)
     {
-        var toDelete = _OrderService.GetOrderById(id);
+        var toDelete = _OrderService.DeleteOrderById(id);
         if (toDelete == null)
             return NotFound();
         else
