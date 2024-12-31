@@ -30,9 +30,10 @@ public class OrderRepo : IOrderRepo
 
     public Order DeleteOrderById(int id)
     {
-        var order = _CafeContext.Orders?.Where( o => o.Id == id);
-        _CafeContext.Orders?.Remove((Order)order!);
-        return (Order)order!;
+        var order = GetOrderById(id);
+        _CafeContext.Orders?.Remove(order!);
+        _CafeContext.SaveChanges();
+        return order!;
 
     }
 

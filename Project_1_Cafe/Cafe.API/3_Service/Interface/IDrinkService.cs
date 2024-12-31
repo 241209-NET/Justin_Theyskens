@@ -11,5 +11,7 @@ public interface IDrinkService
     IEnumerable<DrinkOutDTO> GetDrinksByOrder(int orderId);
 
     Drink GetDrinkById(int id);
+
+    Drink UpdateDrink(int id);
     
 }

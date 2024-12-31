@@ -10,4 +10,5 @@ public interface IOrderService
     
     Order GetOrderById(int id);
     
+    Order DeleteOrderById(int id);
 }
