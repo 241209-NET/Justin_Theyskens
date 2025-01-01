@@ -27,7 +27,7 @@ public class UnitTest1
             new OrderInDTO(){Name = "Dan"}
         ];
 
-        OrderInDTO newOrderDTO = new OrderInDTO(){Name = "Anita Weiner"};
+        OrderInDTO newOrderDTO = new OrderInDTO(){Name = "Anita"};
 
         List<Order> orderList = new();
 
@@ -46,5 +46,6 @@ public class UnitTest1
         //Assert
         Assert.Contains(newOrder, orderList);
         mockRepo.Verify(x => x.CreateNewOrder(It.IsAny<Order>()), Times.Once());
+        
     }
 }

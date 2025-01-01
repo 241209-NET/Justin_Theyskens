@@ -45,6 +45,11 @@ public class UnitTest1
 
         //Assert
         Assert.Contains(newOrder, orderList);
+        // if (orderList.Contains(newOrder))
+        //     Console.WriteLine("pass");
+        // else
+        //     Console.WriteLine("fail");
+
         mockRepo.Verify(x => x.CreateNewOrder(It.IsAny<Order>()), Times.Once());
     }
 }
