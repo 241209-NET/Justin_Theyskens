@@ -221,8 +221,8 @@ var assemblies = [
   {
     "name": "Cafe",
     "classes": [
-      { "name": "Cafe.API.Service.DrinkService", "rp": "Cafe_DrinkService.html", "cl": 0, "ucl": 28, "cal": 28, "tl": 51, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Cafe.API.Service.FoodService", "rp": "Cafe_FoodService.html", "cl": 0, "ucl": 24, "cal": 24, "tl": 46, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Cafe.API.Service.DrinkService", "rp": "Cafe_DrinkService.html", "cl": 10, "ucl": 18, "cal": 28, "tl": 51, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Cafe.API.Service.FoodService", "rp": "Cafe_FoodService.html", "cl": 10, "ucl": 14, "cal": 24, "tl": 46, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Cafe.API.Service.OrderService", "rp": "Cafe_OrderService.html", "cl": 10, "ucl": 14, "cal": 24, "tl": 46, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Cafe.API.Service.SyrupService", "rp": "Cafe_SyrupService.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 35, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},

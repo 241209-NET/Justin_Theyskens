@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.0276" branch-rate="0" version="1.9" timestamp="1735700313" lines-covered="28" lines-valid="1014" branches-covered="0" branches-valid="80">
+<coverage line-rate="0.1183" branch-rate="0.15" version="1.9" timestamp="1735758300" lines-covered="120" lines-valid="1014" branches-covered="12" branches-valid="80">
   <sources>
     <source>C:\Users\justi\</source>
   </sources>
   <packages>
-    <package name="Cafe" line-rate="0.0292" branch-rate="0" complexity="203">
+    <package name="Cafe" line-rate="0.1255" branch-rate="0.16210000000000002" complexity="203">
       <classes>
         <class name="Program" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\Program.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
@@ -84,12 +84,12 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="14" branch="False" />
+                <line number="9" hits="9" branch="False" />
               </lines>
             </method>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="14" branch="False" />
+                <line number="11" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_Total" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -135,27 +135,27 @@
             </method>
             <method name="NextOrder" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="52" hits="14" branch="False" />
-                <line number="53" hits="14" branch="False" />
-                <line number="55" hits="14" branch="False" />
-                <line number="56" hits="14" branch="False" />
+                <line number="52" hits="8" branch="False" />
+                <line number="53" hits="8" branch="False" />
+                <line number="55" hits="8" branch="False" />
+                <line number="56" hits="8" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="14" branch="False" />
-                <line number="17" hits="14" branch="False" />
-                <line number="18" hits="14" branch="False" />
-                <line number="19" hits="14" branch="False" />
-                <line number="20" hits="14" branch="False" />
-                <line number="21" hits="14" branch="False" />
-                <line number="22" hits="14" branch="False" />
+                <line number="13" hits="8" branch="False" />
+                <line number="17" hits="8" branch="False" />
+                <line number="18" hits="8" branch="False" />
+                <line number="19" hits="8" branch="False" />
+                <line number="20" hits="8" branch="False" />
+                <line number="21" hits="8" branch="False" />
+                <line number="22" hits="8" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="14" branch="False" />
-            <line number="11" hits="14" branch="False" />
+            <line number="9" hits="9" branch="False" />
+            <line number="11" hits="8" branch="False" />
             <line number="15" hits="0" branch="False" />
             <line number="25" hits="0" branch="False" />
             <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
@@ -185,17 +185,17 @@
             <line number="46" hits="0" branch="False" />
             <line number="48" hits="0" branch="False" />
             <line number="49" hits="0" branch="False" />
-            <line number="52" hits="14" branch="False" />
-            <line number="53" hits="14" branch="False" />
-            <line number="55" hits="14" branch="False" />
-            <line number="56" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="17" hits="14" branch="False" />
-            <line number="18" hits="14" branch="False" />
-            <line number="19" hits="14" branch="False" />
-            <line number="20" hits="14" branch="False" />
-            <line number="21" hits="14" branch="False" />
-            <line number="22" hits="14" branch="False" />
+            <line number="52" hits="8" branch="False" />
+            <line number="53" hits="8" branch="False" />
+            <line number="55" hits="8" branch="False" />
+            <line number="56" hits="8" branch="False" />
+            <line number="13" hits="8" branch="False" />
+            <line number="17" hits="8" branch="False" />
+            <line number="18" hits="8" branch="False" />
+            <line number="19" hits="8" branch="False" />
+            <line number="20" hits="8" branch="False" />
+            <line number="21" hits="8" branch="False" />
+            <line number="22" hits="8" branch="False" />
           </lines>
         </class>
         <class name="Cafe.Migrations.InitialCreate" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\Migrations\20241229225118_InitialCreate.cs" line-rate="0" branch-rate="1" complexity="2">
@@ -1068,52 +1068,52 @@
             <line number="130" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.Util.Utility" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\6_Utility\Utility.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="Cafe.API.Util.Utility" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\6_Utility\Utility.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
-            <method name="AddSpaces" signature="(System.String)" line-rate="0" branch-rate="0" complexity="6">
+            <method name="AddSpaces" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="9" hits="4" branch="False" />
+                <line number="10" hits="4" branch="False" />
+                <line number="11" hits="180" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="121" type="jump" coverage="0%" />
+                    <condition number="121" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="12" hits="0" branch="False" />
-                <line number="13" hits="0" branch="True" condition-coverage="0% (0/4)">
+                <line number="12" hits="86" branch="False" />
+                <line number="13" hits="86" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
-                    <condition number="14" type="jump" coverage="0%" />
-                    <condition number="33" type="jump" coverage="0%" />
+                    <condition number="14" type="jump" coverage="100%" />
+                    <condition number="33" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="14" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
+                <line number="14" hits="11" branch="False" />
+                <line number="16" hits="75" branch="False" />
+                <line number="17" hits="86" branch="False" />
+                <line number="19" hits="4" branch="False" />
+                <line number="20" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="9" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="11" hits="180" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="121" type="jump" coverage="0%" />
+                <condition number="121" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="True" condition-coverage="0% (0/4)">
+            <line number="12" hits="86" branch="False" />
+            <line number="13" hits="86" branch="True" condition-coverage="100% (4/4)">
               <conditions>
-                <condition number="14" type="jump" coverage="0%" />
-                <condition number="33" type="jump" coverage="0%" />
+                <condition number="14" type="jump" coverage="100%" />
+                <condition number="33" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="14" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
+            <line number="14" hits="11" branch="False" />
+            <line number="16" hits="75" branch="False" />
+            <line number="17" hits="86" branch="False" />
+            <line number="19" hits="4" branch="False" />
+            <line number="20" hits="4" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.Data.CafeContext" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\5_Data\CafeContext.cs" line-rate="0" branch-rate="1" complexity="6">
@@ -1568,15 +1568,15 @@
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.Service.DrinkService" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\3_Service\DrinkService.cs" line-rate="0" branch-rate="1" complexity="6">
+        <class name="Cafe.API.Service.DrinkService" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\3_Service\DrinkService.cs" line-rate="0.35710000000000003" branch-rate="1" complexity="6">
           <methods>
-            <method name="CreateNewDrink" signature="(Cafe.API.Items.Drink)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="CreateNewDrink" signature="(Cafe.API.Items.Drink)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
               </lines>
             </method>
             <method name="GetAllDrinks" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1613,22 +1613,22 @@
                 <line number="50" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(Cafe.API.Repo.IDrinkRepo,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Cafe.API.Repo.IDrinkRepo,AutoMapper.IMapper)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
             <line number="25" hits="0" branch="False" />
             <line number="26" hits="0" branch="False" />
             <line number="27" hits="0" branch="False" />
@@ -1647,22 +1647,22 @@
             <line number="47" hits="0" branch="False" />
             <line number="49" hits="0" branch="False" />
             <line number="50" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.Service.FoodService" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\3_Service\FoodService.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Cafe.API.Service.FoodService" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\3_Service\FoodService.cs" line-rate="0.41659999999999997" branch-rate="1" complexity="5">
           <methods>
-            <method name="CreateNewFood" signature="(Cafe.API.Items.Food)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="CreateNewFood" signature="(Cafe.API.Items.Food)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
               </lines>
             </method>
             <method name="GetAllFoods" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1691,22 +1691,22 @@
                 <line number="45" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(Cafe.API.Repo.IFoodRepo,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Cafe.API.Repo.IFoodRepo,AutoMapper.IMapper)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
             <line number="26" hits="0" branch="False" />
             <line number="27" hits="0" branch="False" />
             <line number="28" hits="0" branch="False" />
@@ -1721,22 +1721,22 @@
             <line number="41" hits="0" branch="False" />
             <line number="44" hits="0" branch="False" />
             <line number="45" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.Service.OrderService" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\3_Service\OrderService.cs" line-rate="0.41659999999999997" branch-rate="0" complexity="6">
           <methods>
             <method name="CreateNewOrder" signature="(Cafe.Order)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="2" branch="False" />
-                <line number="21" hits="2" branch="False" />
-                <line number="22" hits="2" branch="False" />
-                <line number="23" hits="2" branch="False" />
-                <line number="24" hits="2" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
               </lines>
             </method>
             <method name="GetAllOrders" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1780,11 +1780,11 @@
             </method>
           </methods>
           <lines>
-            <line number="20" hits="2" branch="False" />
-            <line number="21" hits="2" branch="False" />
-            <line number="22" hits="2" branch="False" />
-            <line number="23" hits="2" branch="False" />
-            <line number="24" hits="2" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
             <line number="26" hits="0" branch="False" />
             <line number="27" hits="0" branch="False" />
             <line number="28" hits="0" branch="False" />
@@ -2214,16 +2214,16 @@
             <line number="17" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.DTOs.DrinkInDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\DrinkDTO.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Cafe.API.DTOs.DrinkInDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\DrinkDTO.cs" line-rate="0.7" branch-rate="1" complexity="5">
           <methods>
-            <method name="get_Type" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="8" branch="False" />
               </lines>
             </method>
-            <method name="get_Size" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Size" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="11" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2233,31 +2233,31 @@
                 <line number="17" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_OrderId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_OrderId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
+                <line number="20" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="DtoToDrink" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="DtoToDrink" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
+                <line number="23" hits="4" branch="False" />
+                <line number="24" hits="4" branch="False" />
+                <line number="25" hits="4" branch="False" />
+                <line number="26" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
+            <line number="9" hits="8" branch="False" />
+            <line number="11" hits="8" branch="False" />
             <line number="15" hits="0" branch="False" />
             <line number="16" hits="0" branch="False" />
             <line number="17" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
+            <line number="20" hits="4" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="24" hits="4" branch="False" />
+            <line number="25" hits="4" branch="False" />
+            <line number="26" hits="4" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.DTOs.DrinkOutDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\DrinkDTO.cs" line-rate="0" branch-rate="1" complexity="4">
@@ -2294,11 +2294,11 @@
             <line number="39" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.DTOs.FoodInDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\FoodDTO.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Cafe.API.DTOs.FoodInDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\FoodDTO.cs" line-rate="0.6666" branch-rate="1" complexity="4">
           <methods>
-            <method name="get_Type" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2308,30 +2308,30 @@
                 <line number="15" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_OrderId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_OrderId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="0" branch="False" />
+                <line number="18" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="DtoToFood" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="DtoToFood" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
+                <line number="21" hits="4" branch="False" />
+                <line number="22" hits="4" branch="False" />
+                <line number="23" hits="4" branch="False" />
+                <line number="24" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="False" />
+            <line number="9" hits="8" branch="False" />
             <line number="13" hits="0" branch="False" />
             <line number="14" hits="0" branch="False" />
             <line number="15" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="21" hits="4" branch="False" />
+            <line number="22" hits="4" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="24" hits="4" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.DTOs.FoodOutDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\FoodDTO.cs" line-rate="0" branch-rate="1" complexity="3">
@@ -2366,24 +2366,24 @@
           <methods>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="28" branch="False" />
+                <line number="8" hits="14" branch="False" />
               </lines>
             </method>
             <method name="DtoToOrder" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="14" branch="False" />
-                <line number="12" hits="14" branch="False" />
-                <line number="13" hits="14" branch="False" />
-                <line number="14" hits="14" branch="False" />
+                <line number="11" hits="7" branch="False" />
+                <line number="12" hits="7" branch="False" />
+                <line number="13" hits="7" branch="False" />
+                <line number="14" hits="7" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="28" branch="False" />
-            <line number="11" hits="14" branch="False" />
-            <line number="12" hits="14" branch="False" />
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="14" branch="False" />
+            <line number="8" hits="14" branch="False" />
+            <line number="11" hits="7" branch="False" />
+            <line number="12" hits="7" branch="False" />
+            <line number="13" hits="7" branch="False" />
+            <line number="14" hits="7" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.DTOs.OrderOutDTO" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\DTO\OrderDTO.cs" line-rate="0" branch-rate="1" complexity="4">
@@ -2504,11 +2504,11 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.Items.Drink" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\Drink.cs" line-rate="0" branch-rate="0" complexity="32">
+        <class name="Cafe.API.Items.Drink" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\Drink.cs" line-rate="0.3857" branch-rate="0.22219999999999998" complexity="32">
           <methods>
-            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="0" branch="False" />
+                <line number="27" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_OrderId" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2516,29 +2516,29 @@
                 <line number="28" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="0" branch="False" />
+                <line number="29" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Price" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="30" hits="0" branch="False" />
+                <line number="30" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Item" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Item" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="31" hits="0" branch="False" />
+                <line number="31" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Size" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Size" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="32" hits="0" branch="False" />
+                <line number="32" hits="8" branch="False" />
               </lines>
             </method>
-            <method name="get_Type" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="33" hits="0" branch="False" />
+                <line number="33" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_Shots" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2576,21 +2576,21 @@
                 <line number="75" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="GetPrice" signature="()" line-rate="0" branch-rate="0" complexity="6">
+            <method name="GetPrice" signature="()" line-rate="0.7777" branch-rate="0.6666" complexity="6">
               <lines>
-                <line number="78" hits="0" branch="False" />
-                <line number="79" hits="0" branch="True" condition-coverage="0% (0/6)">
+                <line number="78" hits="4" branch="False" />
+                <line number="79" hits="4" branch="True" condition-coverage="66.66% (4/6)">
                   <conditions>
-                    <condition number="13" type="switch" coverage="0%" />
+                    <condition number="13" type="switch" coverage="66.66%" />
                   </conditions>
                 </line>
                 <line number="81" hits="0" branch="False" />
-                <line number="82" hits="0" branch="False" />
-                <line number="83" hits="0" branch="False" />
-                <line number="84" hits="0" branch="False" />
-                <line number="85" hits="0" branch="False" />
+                <line number="82" hits="1" branch="False" />
+                <line number="83" hits="1" branch="False" />
+                <line number="84" hits="1" branch="False" />
+                <line number="85" hits="1" branch="False" />
                 <line number="86" hits="0" branch="False" />
-                <line number="88" hits="0" branch="False" />
+                <line number="88" hits="4" branch="False" />
               </lines>
             </method>
             <method name="UpdateName" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
@@ -2608,12 +2608,12 @@
                 <line number="99" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="GetId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="GetId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="102" hits="0" branch="False" />
-                <line number="103" hits="0" branch="False" />
-                <line number="104" hits="0" branch="False" />
-                <line number="105" hits="0" branch="False" />
+                <line number="102" hits="4" branch="False" />
+                <line number="103" hits="4" branch="False" />
+                <line number="104" hits="4" branch="False" />
+                <line number="105" hits="4" branch="False" />
               </lines>
             </method>
             <method name="GetShots" signature="()" line-rate="0" branch-rate="0" complexity="8">
@@ -2648,29 +2648,29 @@
                 <line number="125" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(Cafe.API.Items.Drink/DrinkSize,Cafe.API.Items.Drink/DrinkType)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Cafe.API.Items.Drink/DrinkSize,Cafe.API.Items.Drink/DrinkType)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="0" branch="False" />
-                <line number="39" hits="0" branch="False" />
-                <line number="40" hits="0" branch="False" />
-                <line number="41" hits="0" branch="False" />
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
-                <line number="44" hits="0" branch="False" />
-                <line number="45" hits="0" branch="False" />
-                <line number="46" hits="0" branch="False" />
-                <line number="47" hits="0" branch="False" />
+                <line number="37" hits="4" branch="False" />
+                <line number="39" hits="4" branch="False" />
+                <line number="40" hits="4" branch="False" />
+                <line number="41" hits="4" branch="False" />
+                <line number="42" hits="4" branch="False" />
+                <line number="43" hits="4" branch="False" />
+                <line number="44" hits="4" branch="False" />
+                <line number="45" hits="4" branch="False" />
+                <line number="46" hits="4" branch="False" />
+                <line number="47" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="27" hits="0" branch="False" />
+            <line number="27" hits="4" branch="False" />
             <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
-            <line number="32" hits="0" branch="False" />
-            <line number="33" hits="0" branch="False" />
+            <line number="29" hits="4" branch="False" />
+            <line number="30" hits="4" branch="False" />
+            <line number="31" hits="4" branch="False" />
+            <line number="32" hits="8" branch="False" />
+            <line number="33" hits="8" branch="False" />
             <line number="35" hits="0" branch="False" />
             <line number="51" hits="0" branch="False" />
             <line number="52" hits="0" branch="False" />
@@ -2694,19 +2694,19 @@
             <line number="73" hits="0" branch="False" />
             <line number="74" hits="0" branch="False" />
             <line number="75" hits="0" branch="False" />
-            <line number="78" hits="0" branch="False" />
-            <line number="79" hits="0" branch="True" condition-coverage="0% (0/6)">
+            <line number="78" hits="4" branch="False" />
+            <line number="79" hits="4" branch="True" condition-coverage="66.66% (4/6)">
               <conditions>
-                <condition number="13" type="switch" coverage="0%" />
+                <condition number="13" type="switch" coverage="66.66%" />
               </conditions>
             </line>
             <line number="81" hits="0" branch="False" />
-            <line number="82" hits="0" branch="False" />
-            <line number="83" hits="0" branch="False" />
-            <line number="84" hits="0" branch="False" />
-            <line number="85" hits="0" branch="False" />
+            <line number="82" hits="1" branch="False" />
+            <line number="83" hits="1" branch="False" />
+            <line number="84" hits="1" branch="False" />
+            <line number="85" hits="1" branch="False" />
             <line number="86" hits="0" branch="False" />
-            <line number="88" hits="0" branch="False" />
+            <line number="88" hits="4" branch="False" />
             <line number="91" hits="0" branch="False" />
             <line number="92" hits="0" branch="False" />
             <line number="93" hits="0" branch="False" />
@@ -2714,10 +2714,10 @@
             <line number="97" hits="0" branch="False" />
             <line number="98" hits="0" branch="False" />
             <line number="99" hits="0" branch="False" />
-            <line number="102" hits="0" branch="False" />
-            <line number="103" hits="0" branch="False" />
-            <line number="104" hits="0" branch="False" />
-            <line number="105" hits="0" branch="False" />
+            <line number="102" hits="4" branch="False" />
+            <line number="103" hits="4" branch="False" />
+            <line number="104" hits="4" branch="False" />
+            <line number="105" hits="4" branch="False" />
             <line number="107" hits="0" branch="False" />
             <line number="108" hits="0" branch="True" condition-coverage="0% (0/6)">
               <conditions>
@@ -2742,23 +2742,23 @@
             <line number="123" hits="0" branch="False" />
             <line number="124" hits="0" branch="False" />
             <line number="125" hits="0" branch="False" />
-            <line number="37" hits="0" branch="False" />
-            <line number="39" hits="0" branch="False" />
-            <line number="40" hits="0" branch="False" />
-            <line number="41" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
-            <line number="44" hits="0" branch="False" />
-            <line number="45" hits="0" branch="False" />
-            <line number="46" hits="0" branch="False" />
-            <line number="47" hits="0" branch="False" />
+            <line number="37" hits="4" branch="False" />
+            <line number="39" hits="4" branch="False" />
+            <line number="40" hits="4" branch="False" />
+            <line number="41" hits="4" branch="False" />
+            <line number="42" hits="4" branch="False" />
+            <line number="43" hits="4" branch="False" />
+            <line number="44" hits="4" branch="False" />
+            <line number="45" hits="4" branch="False" />
+            <line number="46" hits="4" branch="False" />
+            <line number="47" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Cafe.API.Items.Food" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\Food.cs" line-rate="0" branch-rate="0" complexity="12">
+        <class name="Cafe.API.Items.Food" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\Food.cs" line-rate="0.7095999999999999" branch-rate="1" complexity="12">
           <methods>
-            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="0" branch="False" />
+                <line number="18" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_OrderId" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2766,45 +2766,45 @@
                 <line number="19" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
+                <line number="20" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Price" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="0" branch="False" />
+                <line number="22" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Item" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Item" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="0" branch="False" />
+                <line number="23" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="get_Type" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="0" branch="False" />
+                <line number="24" hits="8" branch="False" />
               </lines>
             </method>
-            <method name="GetId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="GetId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="36" hits="0" branch="False" />
-                <line number="37" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
-                <line number="39" hits="0" branch="False" />
+                <line number="36" hits="4" branch="False" />
+                <line number="37" hits="4" branch="False" />
+                <line number="38" hits="4" branch="False" />
+                <line number="39" hits="4" branch="False" />
               </lines>
             </method>
-            <method name="GetPrice" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="GetPrice" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="42" hits="4" branch="False" />
+                <line number="43" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="12" type="jump" coverage="0%" />
+                    <condition number="12" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="45" hits="0" branch="False" />
-                <line number="46" hits="0" branch="False" />
-                <line number="48" hits="0" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="3" branch="False" />
+                <line number="48" hits="4" branch="False" />
               </lines>
             </method>
             <method name="GetName" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -2823,39 +2823,39 @@
                 <line number="60" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(Cafe.API.Items.Food/FoodType)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Cafe.API.Items.Food/FoodType)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
-                <line number="33" hits="0" branch="False" />
+                <line number="25" hits="4" branch="False" />
+                <line number="26" hits="4" branch="False" />
+                <line number="27" hits="4" branch="False" />
+                <line number="28" hits="4" branch="False" />
+                <line number="29" hits="4" branch="False" />
+                <line number="30" hits="4" branch="False" />
+                <line number="31" hits="4" branch="False" />
+                <line number="33" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="18" hits="0" branch="False" />
+            <line number="18" hits="4" branch="False" />
             <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="36" hits="0" branch="False" />
-            <line number="37" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
-            <line number="39" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="20" hits="4" branch="False" />
+            <line number="22" hits="4" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="36" hits="4" branch="False" />
+            <line number="37" hits="4" branch="False" />
+            <line number="38" hits="4" branch="False" />
+            <line number="39" hits="4" branch="False" />
+            <line number="42" hits="4" branch="False" />
+            <line number="43" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="12" type="jump" coverage="0%" />
+                <condition number="12" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="45" hits="0" branch="False" />
-            <line number="46" hits="0" branch="False" />
-            <line number="48" hits="0" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="3" branch="False" />
+            <line number="48" hits="4" branch="False" />
             <line number="51" hits="0" branch="False" />
             <line number="52" hits="0" branch="False" />
             <line number="53" hits="0" branch="False" />
@@ -2864,14 +2864,14 @@
             <line number="58" hits="0" branch="False" />
             <line number="59" hits="0" branch="False" />
             <line number="60" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
-            <line number="33" hits="0" branch="False" />
+            <line number="25" hits="4" branch="False" />
+            <line number="26" hits="4" branch="False" />
+            <line number="27" hits="4" branch="False" />
+            <line number="28" hits="4" branch="False" />
+            <line number="29" hits="4" branch="False" />
+            <line number="30" hits="4" branch="False" />
+            <line number="31" hits="4" branch="False" />
+            <line number="33" hits="4" branch="False" />
           </lines>
         </class>
         <class name="Cafe.API.Items.MappingProfile" filename="Desktop\Revature\Work\Justin_Theyskens\Project_1_Cafe\Cafe.API\1_Model\MappingProfile.cs" line-rate="0" branch-rate="1" complexity="1">
