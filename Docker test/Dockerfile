@@ -59,3 +59,4 @@ COPY --from=build /app/out ./
 ENTRYPOINT ["dotnet", "./ProjectName.API.dll"]
 
 #docker build -t name:latest ./Dockerfile ( or just .)
+
