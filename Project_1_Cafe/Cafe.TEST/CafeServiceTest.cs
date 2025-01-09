@@ -51,6 +51,38 @@ public class UnitTest1
     }
 
     [Fact]
+    public void TestAllOrder()
+    {
+        //Arrange
+        Mock<IOrderRepo> mockRepo = new();
+        Mock<IMapper> mockMapper = new();
+        OrderService orderService = new(mockRepo.Object, mockMapper.Object);
+
+        List<OrderInDTO> orderDTOList = 
+        [
+            new OrderInDTO(){Name = "Justin"},
+            new OrderInDTO(){Name = "Sammy"},
+            new OrderInDTO(){Name = "Devin"},
+            new OrderInDTO(){Name = "Krystel"},
+            new OrderInDTO(){Name = "Mike"},
+            new OrderInDTO(){Name = "Dan"}
+        ];
+
+        List<Order> orderList = new();
+
+        foreach(OrderInDTO order in orderDTOList)
+        {
+            orderList.Add(order.DtoToOrder());
+        }
+
+        //Act
+        var allOrders = orderService.GetAllOrders();
+
+        //Assert
+        Assert.Equal(allOrders.Count(), orderDTOList.Count());
+    }
+
+    [Fact]
     public void TestCreateNewDrink()
     {
         //Arrange
