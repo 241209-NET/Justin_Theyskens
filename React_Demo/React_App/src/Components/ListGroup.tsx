@@ -17,7 +17,7 @@ function ListGroup({ items, heading, onSelectItem }: Props)
     //const [name, setName] = useState('');
 
     return (
-        <> 
+        <Fragment> 
             <h1>{heading}</h1>
             {items.length == 0 && <p>No items found</p> }
             <ul className="list-group">
@@ -34,7 +34,7 @@ function ListGroup({ items, heading, onSelectItem }: Props)
                     </li>
                 ))}
             </ul>
-        </>
+        </Fragment>
     );
 }
 
