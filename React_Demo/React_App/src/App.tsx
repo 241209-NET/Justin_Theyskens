@@ -1,21 +1,19 @@
-import ListGroup from "./Components/ListGroup";
+import Alert from "./Components/Alert";
+import Button from "./Components/Button";
+//import ListGroup from "./Components/ListGroup";
+
 function App()
 {
-      const items = [
-          'New York',
-          'San Fran',
-          'Tokyo',
-          'London',
-          'Paris'
-      ];
-
-      const handleSelectedItem = (item: string) => 
-        {
-          console.log(item);
-        }
-
-  // Always close react components
-  return <div><ListGroup items={items} heading="Cities" onSelectItem={handleSelectedItem}/></div>
+  return (
+    <div>
+      <Alert> 
+        Hello World
+      </Alert>
+      <Button onClick={() => console.log('clicked')}>
+        My Button
+      </Button>
+    </div>
+  )
 }
 
 export default App;

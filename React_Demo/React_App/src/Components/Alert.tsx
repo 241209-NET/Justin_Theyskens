@@ -1,0 +1,18 @@
+//import React from 'react'
+
+import { ReactNode } from "react";
+
+// AFCE - React arrow fn component export
+interface Props
+{
+    children: ReactNode;
+}
+const Alert = ({ children }: Props) => {
+  return (
+    <div className="alert alert-primary">
+        {children}
+    </div>
+  )
+}
+
+export default Alert
